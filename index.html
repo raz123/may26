@@ -38,16 +38,25 @@
     <div id="app"><div id="app-loading"><div class="loading-spinner"></div><div class="loading-text">Loading Quebec fishing spots...</div></div></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
-      // Force clear any cached old bundle by checking if its hash is stale
-      if ('caches' in window) {
-        caches.keys().then(function(keys) {
-          keys.forEach(function(key) {
-            if (key.includes('BEdNaBXa') || key.includes('may26')) {
-              caches.delete(key);
+    // Inline stale-bundle detector — runs before app JS loads
+    (function(){
+      var SCRIPT_SRC = '/may26/assets/index-';
+      var STALE_HASHES = ['BEdNaBXa','D0JSevUK','Bus79q79','DC01fIDd'];
+      var scripts = document.getElementsByTagName('script');
+      for (var i = 0; i < scripts.length; i++) {
+        var src = scripts[i].src;
+        if (src.indexOf(SCRIPT_SRC) >= 0) {
+          for (var j = 0; j < STALE_HASHES.length; j++) {
+            if (src.indexOf(STALE_HASHES[j]) >= 0) {
+              // Found a stale cached script — force hard reload
+              location.reload(true);
+              break;
             }
-          });
-        });
+          }
+          break;
+        }
       }
+    })();
     </script>
   </body>
 </html>
