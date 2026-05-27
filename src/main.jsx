@@ -3,6 +3,18 @@ import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
 
+// Detect stale cached bundle — force reload if version doesn't match
+(function(){
+  var VERSION = 'v7';
+  var stored = sessionStorage.getItem('app_version');
+  if (stored && stored !== VERSION) {
+    sessionStorage.clear();
+    location.reload(true);
+    return;
+  }
+  sessionStorage.setItem('app_version', VERSION);
+})();
+
 // Catch and display runtime errors for debugging
 window.addEventListener('error', function(e) {
   var el = document.getElementById('app-error');
