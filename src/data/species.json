@@ -1,122 +1,330 @@
 [
   {
     "id": 1,
-    "name": { "en": "Walleye", "fr": "Doré jaune" },
+    "name": {
+      "en": "Walleye",
+      "fr": "Doré jaune"
+    },
     "scientific": "Sander vitreus",
     "emoji": "🐟",
-    "seasons": ["spring", "summer", "fall"],
-    "bestTime": { "en": "Dawn and dusk — low light periods. Excellent night fishing in summer.", "fr": "Aube et crépuscule — périodes de faible luminosité. Excellente pêche de nuit en été." },
-    "techniques": { "en": "Jigging with minnows or soft plastics near rocky bottoms. Trolling crankbaits along drop-offs. Slow drifting with Lindy rigs.", "fr": "Pêche à la dandinette avec ménés ou leurres souples près des fonds rocheux. Pêche à la traîne avec leurres plongeants. Dérive lente avec montage Lindy." },
-    "regulations": { "en": "Min size: 37cm (some zones). Daily limit: 6 (varies by fishing zone). Season: late May to March.", "fr": "Taille min : 37 cm (certaines zones). Limite quotidienne : 6 (varie selon la zone). Saison : fin mai à mars." }
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Dawn and dusk — low light periods. Excellent night fishing in summer.",
+      "fr": "Aube et crépuscule — périodes de faible luminosité. Excellente pêche de nuit en été."
+    },
+    "techniques": {
+      "en": "Jigging with minnows or soft plastics near rocky bottoms. Trolling crankbaits along drop-offs. Slow drifting with Lindy rigs.",
+      "fr": "Pêche à la dandinette avec ménés ou leurres souples près des fonds rocheux. Pêche à la traîne avec leurres plongeants. Dérive lente avec montage Lindy."
+    },
+    "regulations": {
+      "en": "Min size: 37cm (some zones). Daily limit: 6 (varies by fishing zone). Season: late May to March.",
+      "fr": "Taille min : 37 cm (certaines zones). Limite quotidienne : 6 (varie selon la zone). Saison : fin mai à mars."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Walleye"
   },
   {
     "id": 2,
-    "name": { "en": "Northern Pike", "fr": "Grand brochet" },
+    "name": {
+      "en": "Northern Pike",
+      "fr": "Grand brochet"
+    },
     "scientific": "Esox lucius",
     "emoji": "🐊",
-    "seasons": ["spring", "summer", "fall", "winter"],
-    "bestTime": { "en": "Morning and late afternoon. Active in cooler water. Top action in spring after ice-out.", "fr": "Matin et fin d'après-midi. Actif en eau fraîche. Meilleure action au printemps après la débâcle." },
-    "techniques": { "en": "Casting large spoons, spinnerbaits, and jerkbaits near weed beds. Live bait rigging with suckers or chubs. Ice fishing with tip-ups and large minnows.", "fr": "Lancer de grandes cuillères, leurres à palette et jerkbaits près des herbiers. Montage pour appâts vivants avec meuniers ou mulets. Pêche sous glace avec bascules et gros ménés." },
-    "regulations": { "en": "Min size: varies by zone (often 50-70cm). Daily limit: 3-6. No closed season in most zones.", "fr": "Taille min : varie selon la zone (souvent 50-70 cm). Limite quotidienne : 3-6. Aucune fermeture dans la plupart des zones." }
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "bestTime": {
+      "en": "Morning and late afternoon. Active in cooler water. Top action in spring after ice-out.",
+      "fr": "Matin et fin d'après-midi. Actif en eau fraîche. Meilleure action au printemps après la débâcle."
+    },
+    "techniques": {
+      "en": "Casting large spoons, spinnerbaits, and jerkbaits near weed beds. Live bait rigging with suckers or chubs. Ice fishing with tip-ups and large minnows.",
+      "fr": "Lancer de grandes cuillères, leurres à palette et jerkbaits près des herbiers. Montage pour appâts vivants avec meuniers ou mulets. Pêche sous glace avec bascules et gros ménés."
+    },
+    "regulations": {
+      "en": "Min size: varies by zone (often 50-70cm). Daily limit: 3-6. No closed season in most zones.",
+      "fr": "Taille min : varie selon la zone (souvent 50-70 cm). Limite quotidienne : 3-6. Aucune fermeture dans la plupart des zones."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Northern_pike"
   },
   {
     "id": 3,
-    "name": { "en": "Brook Trout", "fr": "Omble de fontaine" },
+    "name": {
+      "en": "Brook Trout",
+      "fr": "Omble de fontaine"
+    },
     "scientific": "Salvelinus fontinalis",
     "emoji": "🎣",
-    "seasons": ["spring", "summer", "fall"],
-    "bestTime": { "en": "Early morning and evening. In summer, fish deep during midday. Peak activity in spring and fall.", "fr": "Tôt le matin et en soirée. En été, pêcher en profondeur durant la journée. Pleine activité au printemps et à l'automne." },
-    "techniques": { "en": "Fly fishing with dry flies and nymphs in rivers. Spinning with small spinners (Mepps, Vibrax). PowerBait or worms from shore. Ice fishing with small jigs and maggots.", "fr": "Pêche à la mouche avec mouches sèches et nymphes en rivière. Pêche au lancer avec petits leurres (Mepps, Vibrax). PowerBait ou vers du rivage. Pêche sous glace avec petits jigs et asticots." },
-    "regulations": { "en": "Min size: varies. Daily limit: 5-15 depending on zone. Season: varies by zone — check MRNF guidelines.", "fr": "Taille min : variable. Limite quotidienne : 5-15 selon la zone. Saison : variable selon la zone — consulter les directives du MRNF." }
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Early morning and evening. In summer, fish deep during midday. Peak activity in spring and fall.",
+      "fr": "Tôt le matin et en soirée. En été, pêcher en profondeur durant la journée. Pleine activité au printemps et à l'automne."
+    },
+    "techniques": {
+      "en": "Fly fishing with dry flies and nymphs in rivers. Spinning with small spinners (Mepps, Vibrax). PowerBait or worms from shore. Ice fishing with small jigs and maggots.",
+      "fr": "Pêche à la mouche avec mouches sèches et nymphes en rivière. Pêche au lancer avec petits leurres (Mepps, Vibrax). PowerBait ou vers du rivage. Pêche sous glace avec petits jigs et asticots."
+    },
+    "regulations": {
+      "en": "Min size: varies. Daily limit: 5-15 depending on zone. Season: varies by zone — check MRNF guidelines.",
+      "fr": "Taille min : variable. Limite quotidienne : 5-15 selon la zone. Saison : variable selon la zone — consulter les directives du MRNF."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Brook_trout"
   },
   {
     "id": 4,
-    "name": { "en": "Lake Trout", "fr": "Touladi" },
+    "name": {
+      "en": "Lake Trout",
+      "fr": "Touladi"
+    },
     "scientific": "Salvelinus namaycush",
     "emoji": "🎣",
-    "seasons": ["spring", "summer", "fall", "winter"],
-    "bestTime": { "en": "Spring (surface after ice-out) and fall (spawning). Summer: fish deep (20-40m). Winter: popular ice fishing target.", "fr": "Printemps (surface après la débâcle) et automne (fraie). Été : pêche en profondeur (20-40 m). Hiver : cible populaire pour la pêche sous glace." },
-    "techniques": { "en": "Trolling deep-diving crankbaits or spoons with downriggers. Jigging heavy spoons in deep lakes. Ice fishing with tube jigs, spoons, and live bait.", "fr": "Pêche à la traîne avec leurres plongeants ou cuillères et downriggers. Pêche à la dandinette avec cuillères lourdes dans les lacs profonds. Pêche sous glace avec leurres tubes, cuillères et appâts vivants." },
-    "regulations": { "en": "Min size: varies by zone (often 45-60cm). Daily limit: 2-4. Many zones require catch-and-release for large fish.", "fr": "Taille min : variable selon la zone (souvent 45-60 cm). Limite quotidienne : 2-4. Plusieurs zones exigent la capture-relâche pour les gros spécimens." }
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "bestTime": {
+      "en": "Spring (surface after ice-out) and fall (spawning). Summer: fish deep (20-40m). Winter: popular ice fishing target.",
+      "fr": "Printemps (surface après la débâcle) et automne (fraie). Été : pêche en profondeur (20-40 m). Hiver : cible populaire pour la pêche sous glace."
+    },
+    "techniques": {
+      "en": "Trolling deep-diving crankbaits or spoons with downriggers. Jigging heavy spoons in deep lakes. Ice fishing with tube jigs, spoons, and live bait.",
+      "fr": "Pêche à la traîne avec leurres plongeants ou cuillères et downriggers. Pêche à la dandinette avec cuillères lourdes dans les lacs profonds. Pêche sous glace avec leurres tubes, cuillères et appâts vivants."
+    },
+    "regulations": {
+      "en": "Min size: varies by zone (often 45-60cm). Daily limit: 2-4. Many zones require catch-and-release for large fish.",
+      "fr": "Taille min : variable selon la zone (souvent 45-60 cm). Limite quotidienne : 2-4. Plusieurs zones exigent la capture-relâche pour les gros spécimens."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Lake_trout"
   },
   {
     "id": 5,
-    "name": { "en": "Smallmouth Bass", "fr": "Achigan à petite bouche" },
+    "name": {
+      "en": "Smallmouth Bass",
+      "fr": "Achigan à petite bouche"
+    },
     "scientific": "Micropterus dolomieu",
     "emoji": "🐠",
-    "seasons": ["spring", "summer", "fall"],
-    "bestTime": { "en": "Morning and evening. Active in 18-24°C water. Post-spawn in June/July is peak.", "fr": "Matin et soirée. Actif dans une eau de 18-24 °C. La période post-fraie en juin/juillet est optimale." },
-    "techniques": { "en": "Casting tube jigs, crawfish imitations, and spinnerbaits near rocky shores and drop-offs. Topwater lures at dawn. Drop-shot rigging for deeper fish.", "fr": "Lancer de leurres tubes, d'imitations d'écrevisses et de leurres à palette près des rives rocheuses et des tombants. Leurre de surface à l'aube. Montage drop-shot pour les poissons plus profonds." },
-    "regulations": { "en": "Min size: 30cm in most zones. Daily limit: 5-6. Season: usually late June to October.", "fr": "Taille min : 30 cm dans la plupart des zones. Limite quotidienne : 5-6. Saison : généralement fin juin à octobre." }
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Morning and evening. Active in 18-24°C water. Post-spawn in June/July is peak.",
+      "fr": "Matin et soirée. Actif dans une eau de 18-24 °C. La période post-fraie en juin/juillet est optimale."
+    },
+    "techniques": {
+      "en": "Casting tube jigs, crawfish imitations, and spinnerbaits near rocky shores and drop-offs. Topwater lures at dawn. Drop-shot rigging for deeper fish.",
+      "fr": "Lancer de leurres tubes, d'imitations d'écrevisses et de leurres à palette près des rives rocheuses et des tombants. Leurre de surface à l'aube. Montage drop-shot pour les poissons plus profonds."
+    },
+    "regulations": {
+      "en": "Min size: 30cm in most zones. Daily limit: 5-6. Season: usually late June to October.",
+      "fr": "Taille min : 30 cm dans la plupart des zones. Limite quotidienne : 5-6. Saison : généralement fin juin à octobre."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Smallmouth_bass"
   },
   {
     "id": 6,
-    "name": { "en": "Largemouth Bass", "fr": "Achigan à grande bouche" },
+    "name": {
+      "en": "Largemouth Bass",
+      "fr": "Achigan à grande bouche"
+    },
     "scientific": "Micropterus salmoides",
     "emoji": "🐠",
-    "seasons": ["spring", "summer", "fall"],
-    "bestTime": { "en": "Early morning topwater bite. Slows midday in summer heat. Fall feeding frenzy before winter.", "fr": "Pêche en surface tôt le matin. Ralentit en mi-journée durant les chaleurs estivales. Frénésie alimentaire automnale avant l'hiver." },
-    "techniques": { "en": "Plastic worms Texas-rigged in weed beds. Topwater frogs over lily pads. Crankbaits along weed lines. Spinnerbaits in stained water.", "fr": "Vers en plastique montage Texas dans les herbiers. Grenouilles de surface sur les nénuphars. Leurres plongeants le long des bordures d'herbiers. Leurres à palette en eau trouble." },
-    "regulations": { "en": "Min size: 30cm in most zones. Daily limit: 5-6. Season: usually late June to October.", "fr": "Taille min : 30 cm dans la plupart des zones. Limite quotidienne : 5-6. Saison : généralement fin juin à octobre." }
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Early morning topwater bite. Slows midday in summer heat. Fall feeding frenzy before winter.",
+      "fr": "Pêche en surface tôt le matin. Ralentit en mi-journée durant les chaleurs estivales. Frénésie alimentaire automnale avant l'hiver."
+    },
+    "techniques": {
+      "en": "Plastic worms Texas-rigged in weed beds. Topwater frogs over lily pads. Crankbaits along weed lines. Spinnerbaits in stained water.",
+      "fr": "Vers en plastique montage Texas dans les herbiers. Grenouilles de surface sur les nénuphars. Leurres plongeants le long des bordures d'herbiers. Leurres à palette en eau trouble."
+    },
+    "regulations": {
+      "en": "Min size: 30cm in most zones. Daily limit: 5-6. Season: usually late June to October.",
+      "fr": "Taille min : 30 cm dans la plupart des zones. Limite quotidienne : 5-6. Saison : généralement fin juin à octobre."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Largemouth_bass"
   },
   {
     "id": 7,
-    "name": { "en": "Muskellunge", "fr": "Maskinongé" },
+    "name": {
+      "en": "Muskellunge",
+      "fr": "Maskinongé"
+    },
     "scientific": "Esox masquinongy",
     "emoji": "🐊",
-    "seasons": ["spring", "summer", "fall"],
-    "bestTime": { "en": "Low light — dawn, dusk, overcast days. Fall is prime time. Water temp 15-22°C.", "fr": "Faible luminosité — aube, crépuscule, jours nuageux. L'automne est la période idéale. Température de l'eau 15-22 °C." },
-    "techniques": { "en": "Heavy tackle required. Casting large bucktail spinners, jerkbaits, and topwater lures near weed beds. Figure-8 at boat side on follows. Steel leader mandatory.", "fr": "Équipement lourd requis. Lancer de grandes cuillères à poils, jerkbaits et leurres de surface près des herbiers. Figure 8 au côté du bateau sur les suivis. Bas de ligne en acier obligatoire." },
-    "regulations": { "en": "Min size: 100-120cm depending on zone. Daily limit: 0-1 (catch-and-release encouraged). Season: varies — typically June to November.", "fr": "Taille min : 100-120 cm selon la zone. Limite quotidienne : 0-1 (capture-relâche encouragée). Saison : variable — généralement juin à novembre." }
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Low light — dawn, dusk, overcast days. Fall is prime time. Water temp 15-22°C.",
+      "fr": "Faible luminosité — aube, crépuscule, jours nuageux. L'automne est la période idéale. Température de l'eau 15-22 °C."
+    },
+    "techniques": {
+      "en": "Heavy tackle required. Casting large bucktail spinners, jerkbaits, and topwater lures near weed beds. Figure-8 at boat side on follows. Steel leader mandatory.",
+      "fr": "Équipement lourd requis. Lancer de grandes cuillères à poils, jerkbaits et leurres de surface près des herbiers. Figure 8 au côté du bateau sur les suivis. Bas de ligne en acier obligatoire."
+    },
+    "regulations": {
+      "en": "Min size: 100-120cm depending on zone. Daily limit: 0-1 (catch-and-release encouraged). Season: varies — typically June to November.",
+      "fr": "Taille min : 100-120 cm selon la zone. Limite quotidienne : 0-1 (capture-relâche encouragée). Saison : variable — généralement juin à novembre."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Muskellunge"
   },
   {
     "id": 8,
-    "name": { "en": "Yellow Perch", "fr": "Perchaude" },
+    "name": {
+      "en": "Yellow Perch",
+      "fr": "Perchaude"
+    },
     "scientific": "Perca flavescens",
     "emoji": "🐟",
-    "seasons": ["spring", "summer", "fall", "winter"],
-    "bestTime": { "en": "Midday to afternoon. Active year-round. Winter ice fishing is extremely popular.", "fr": "Midi à après-midi. Actif toute l'année. La pêche sous glace hivernale est extrêmement populaire." },
-    "techniques": { "en": "Light tackle with small jigs, worms, or minnows. Small spinners and spoons. Ice fishing with micro-jigs, maggots, and small minnows.", "fr": "Équipement léger avec petits jigs, vers ou ménés. Petits leurres et cuillères. Pêche sous glace avec micro-jigs, asticots et petits ménés." },
-    "regulations": { "en": "No minimum size in most zones. Daily limit: 30-50. No closed season in most waters.", "fr": "Aucune taille minimale dans la plupart des zones. Limite quotidienne : 30-50. Aucune fermeture dans la plupart des eaux." }
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "bestTime": {
+      "en": "Midday to afternoon. Active year-round. Winter ice fishing is extremely popular.",
+      "fr": "Midi à après-midi. Actif toute l'année. La pêche sous glace hivernale est extrêmement populaire."
+    },
+    "techniques": {
+      "en": "Light tackle with small jigs, worms, or minnows. Small spinners and spoons. Ice fishing with micro-jigs, maggots, and small minnows.",
+      "fr": "Équipement léger avec petits jigs, vers ou ménés. Petits leurres et cuillères. Pêche sous glace avec micro-jigs, asticots et petits ménés."
+    },
+    "regulations": {
+      "en": "No minimum size in most zones. Daily limit: 30-50. No closed season in most waters.",
+      "fr": "Aucune taille minimale dans la plupart des zones. Limite quotidienne : 30-50. Aucune fermeture dans la plupart des eaux."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Yellow_perch"
   },
   {
     "id": 9,
-    "name": { "en": "Atlantic Salmon", "fr": "Saumon atlantique" },
+    "name": {
+      "en": "Atlantic Salmon",
+      "fr": "Saumon atlantique"
+    },
     "scientific": "Salmo salar",
     "emoji": "🐟",
-    "seasons": ["spring", "summer", "fall"],
-    "bestTime": { "en": "Morning and evening. Summer runs (June-August) peak after rain raises water levels. Fall spawners in September.", "fr": "Matin et soirée. Les montaisons estivales (juin-août) culminent après les pluies. Fraie automnale en septembre." },
-    "techniques": { "en": "Fly fishing only on most salmon rivers. Spey casting with large wet flies, tubes, and shrimp patterns. Spinning allowed on some rivers — casting spoons and spinners.", "fr": "Pêche à la mouche seulement sur la plupart des rivières à saumon. Pêche à la Spey avec grandes mouches noyées, tubes et patterns de crevettes. Lancer autorisé sur certaines rivières — cuillères et leurres." },
-    "regulations": { "en": "Strict catch-and-release on most Quebec rivers. Barbless hooks mandatory. Season dates vary by river — check specific river regulations.", "fr": "Capture-relâche strict sur la plupart des rivières du Québec. Hameçons sans ardillon obligatoires. Dates de saison variables selon la rivière — vérifier les règlements spécifiques." }
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Morning and evening. Summer runs (June-August) peak after rain raises water levels. Fall spawners in September.",
+      "fr": "Matin et soirée. Les montaisons estivales (juin-août) culminent après les pluies. Fraie automnale en septembre."
+    },
+    "techniques": {
+      "en": "Fly fishing only on most salmon rivers. Spey casting with large wet flies, tubes, and shrimp patterns. Spinning allowed on some rivers — casting spoons and spinners.",
+      "fr": "Pêche à la mouche seulement sur la plupart des rivières à saumon. Pêche à la Spey avec grandes mouches noyées, tubes et patterns de crevettes. Lancer autorisé sur certaines rivières — cuillères et leurres."
+    },
+    "regulations": {
+      "en": "Strict catch-and-release on most Quebec rivers. Barbless hooks mandatory. Season dates vary by river — check specific river regulations.",
+      "fr": "Capture-relâche strict sur la plupart des rivières du Québec. Hameçons sans ardillon obligatoires. Dates de saison variables selon la rivière — vérifier les règlements spécifiques."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Atlantic_salmon"
   },
   {
     "id": 10,
-    "name": { "en": "Lake Whitefish", "fr": "Corégone" },
+    "name": {
+      "en": "Lake Whitefish",
+      "fr": "Corégone"
+    },
     "scientific": "Coregonus clupeaformis",
     "emoji": "🐟",
-    "seasons": ["spring", "summer", "fall", "winter"],
-    "bestTime": { "en": "Late evening and night in summer. Fall spawning aggregations in shallows. Very popular ice fishing target.", "fr": "Tard en soirée et nuit en été. Rassemblements pour la fraie automnale en eaux peu profondes. Cible très populaire pour la pêche sous glace." },
-    "techniques": { "en": "Light tackle fishing with small hooks and worms/corn in deep lakes. Fly fishing for whitefish on the surface in fall. Ice fishing with small spoons, sweedish pimples, and maggots.", "fr": "Pêche avec équipement léger, petits hameçons et vers/maïs dans les lacs profonds. Pêche à la mouche en surface à l'automne. Pêche sous glace avec petites cuillères, pimples suédois et asticots." },
-    "regulations": { "en": "Min size: varies. Daily limit: 10-15. Popular for ice fishing in Saguenay and Côte-Nord regions.", "fr": "Taille min : variable. Limite quotidienne : 10-15. Populaire pour la pêche sous glace au Saguenay et sur la Côte-Nord." }
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "bestTime": {
+      "en": "Late evening and night in summer. Fall spawning aggregations in shallows. Very popular ice fishing target.",
+      "fr": "Tard en soirée et nuit en été. Rassemblements pour la fraie automnale en eaux peu profondes. Cible très populaire pour la pêche sous glace."
+    },
+    "techniques": {
+      "en": "Light tackle fishing with small hooks and worms/corn in deep lakes. Fly fishing for whitefish on the surface in fall. Ice fishing with small spoons, sweedish pimples, and maggots.",
+      "fr": "Pêche avec équipement léger, petits hameçons et vers/maïs dans les lacs profonds. Pêche à la mouche en surface à l'automne. Pêche sous glace avec petites cuillères, pimples suédois et asticots."
+    },
+    "regulations": {
+      "en": "Min size: varies. Daily limit: 10-15. Popular for ice fishing in Saguenay and Côte-Nord regions.",
+      "fr": "Taille min : variable. Limite quotidienne : 10-15. Populaire pour la pêche sous glace au Saguenay et sur la Côte-Nord."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Lake_whitefish"
   },
   {
     "id": 11,
-    "name": { "en": "Rainbow Trout", "fr": "Truite arc-en-ciel" },
+    "name": {
+      "en": "Rainbow Trout",
+      "fr": "Truite arc-en-ciel"
+    },
     "scientific": "Oncorhynchus mykiss",
     "emoji": "🎣",
-    "seasons": ["spring", "summer", "fall"],
-    "bestTime": { "en": "Mid-morning to late afternoon. Prefers cool, oxygenated water. Spring and fall are best.", "fr": "Fin de matinée à fin d'après-midi. Préfère l'eau fraîche et oxygénée. Meilleur au printemps et à l'automne." },
-    "techniques": { "en": "PowerBait and worms from shore in stocked lakes. Fly fishing with nymphs and streamers in rivers. Trolling small spoons and spoons in lakes. Ice fishing with small jigs.", "fr": "PowerBait et vers du rivage dans les lacs ensemencés. Pêche à la mouche avec nymphes et streamers en rivière. Pêche à la traîne avec petites cuillères dans les lacs. Pêche sous glace avec petits jigs." },
-    "regulations": { "en": "Min size: varies. Daily limit: 5-15 depending on zone. Many stocked lakes have special regulations.", "fr": "Taille min : variable. Limite quotidienne : 5-15 selon la zone. Plusieurs lacs ensemencés ont des règlements spéciaux." }
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Mid-morning to late afternoon. Prefers cool, oxygenated water. Spring and fall are best.",
+      "fr": "Fin de matinée à fin d'après-midi. Préfère l'eau fraîche et oxygénée. Meilleur au printemps et à l'automne."
+    },
+    "techniques": {
+      "en": "PowerBait and worms from shore in stocked lakes. Fly fishing with nymphs and streamers in rivers. Trolling small spoons and spoons in lakes. Ice fishing with small jigs.",
+      "fr": "PowerBait et vers du rivage dans les lacs ensemencés. Pêche à la mouche avec nymphes et streamers en rivière. Pêche à la traîne avec petites cuillères dans les lacs. Pêche sous glace avec petits jigs."
+    },
+    "regulations": {
+      "en": "Min size: varies. Daily limit: 5-15 depending on zone. Many stocked lakes have special regulations.",
+      "fr": "Taille min : variable. Limite quotidienne : 5-15 selon la zone. Plusieurs lacs ensemencés ont des règlements spéciaux."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Rainbow_trout"
   },
   {
     "id": 12,
-    "name": { "en": "Sauger", "fr": "Doré noir" },
+    "name": {
+      "en": "Sauger",
+      "fr": "Doré noir"
+    },
     "scientific": "Sander canadensis",
     "emoji": "🐟",
-    "seasons": ["spring", "summer", "fall"],
-    "bestTime": { "en": "Same as walleye — dawn and dusk. Prefers murkier water than walleye. Active in rivers with current.", "fr": "Comme le doré jaune — aube et crépuscule. Préfère une eau plus trouble que le doré jaune. Actif dans les rivières avec courant." },
-    "techniques": { "en": "Jigging with minnows in river currents. Trolling nightcrawler harnesses along channel edges. Bottom bouncing with spinner rigs.", "fr": "Pêche à la dandinette avec ménés dans les courants de rivière. Pêche à la traîne avec montages à vers de nuit le long des chenaux. Pêche au contact avec montages à palettes." },
-    "regulations": { "en": "Min size: varies. Daily limit: 6 (often combined with walleye limit). Season: late May to March.", "fr": "Taille min : variable. Limite quotidienne : 6 (souvent combinée avec la limite de doré jaune). Saison : fin mai à mars." }
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Same as walleye — dawn and dusk. Prefers murkier water than walleye. Active in rivers with current.",
+      "fr": "Comme le doré jaune — aube et crépuscule. Préfère une eau plus trouble que le doré jaune. Actif dans les rivières avec courant."
+    },
+    "techniques": {
+      "en": "Jigging with minnows in river currents. Trolling nightcrawler harnesses along channel edges. Bottom bouncing with spinner rigs.",
+      "fr": "Pêche à la dandinette avec ménés dans les courants de rivière. Pêche à la traîne avec montages à vers de nuit le long des chenaux. Pêche au contact avec montages à palettes."
+    },
+    "regulations": {
+      "en": "Min size: varies. Daily limit: 6 (often combined with walleye limit). Season: late May to March.",
+      "fr": "Taille min : variable. Limite quotidienne : 6 (souvent combinée avec la limite de doré jaune). Saison : fin mai à mars."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Sauger"
   }
 ]

@@ -103,62 +103,60 @@ export default function FilterBar({ filters, onChange, species }) {
               }}
             >
               {t(`filter.${type}`)}
-              {type === 'zec' && <span style={{ fontSize: 10, marginLeft: 2, opacity: 0.7 }}>ⓘ</span>}
             </button>
           );
         })}
       </div>
 
-      {/* Region + Species inline */}
-      <div style={{ display: 'flex', gap: 6 }}>
-        <select
-          value={filters.region || ''}
-          onChange={(e) => set('region', e.target.value)}
-          style={{
-            flex: 1,
-            padding: '0.4rem 0.5rem',
-            border: '1px solid var(--color-border)',
-            borderRadius: 'var(--radius-md)',
-            fontSize: 12,
-            color: 'var(--color-text)',
-            background: 'var(--color-background)',
-            cursor: 'pointer',
-            transition: 'border-color var(--transition-fast)',
-          }}
-          onFocus={(e) => e.currentTarget.style.borderColor = 'var(--color-primary)'}
-          onBlur={(e) => e.currentTarget.style.borderColor = 'var(--color-border)'}
-        >
-          <option value="">🌍 {t('region.all')}</option>
-          {REGIONS.map((r) => (
-            <option key={r} value={r}>{r}</option>
-          ))}
-        </select>
+      {/* Region */}
+      <select
+        value={filters.region || ''}
+        onChange={(e) => set('region', e.target.value)}
+        style={{
+          width: '100%',
+          padding: '0.4rem 0.5rem',
+          border: '1px solid var(--color-border)',
+          borderRadius: 'var(--radius-md)',
+          fontSize: 12,
+          color: 'var(--color-text)',
+          background: 'var(--color-background)',
+          cursor: 'pointer',
+          transition: 'border-color var(--transition-fast)',
+        }}
+        onFocus={(e) => e.currentTarget.style.borderColor = 'var(--color-primary)'}
+        onBlur={(e) => e.currentTarget.style.borderColor = 'var(--color-border)'}
+      >
+        <option value="">🌍 {t('region.all')}</option>
+        {REGIONS.map((r) => (
+          <option key={r} value={r}>{r}</option>
+        ))}
+      </select>
 
-        <select
-          value={filters.species || ''}
-          onChange={(e) => set('species', e.target.value)}
-          style={{
-            flex: 1,
-            padding: '0.4rem 0.5rem',
-            border: '1px solid var(--color-border)',
-            borderRadius: 'var(--radius-md)',
-            fontSize: 12,
-            color: 'var(--color-text)',
-            background: 'var(--color-background)',
-            cursor: 'pointer',
-            transition: 'border-color var(--transition-fast)',
-          }}
-          onFocus={(e) => e.currentTarget.style.borderColor = 'var(--color-primary)'}
-          onBlur={(e) => e.currentTarget.style.borderColor = 'var(--color-border)'}
-        >
-          <option value="">🐟 {t('species.all')}</option>
-          {species.map((s) => (
-            <option key={s.id} value={s.id}>
-              {s.name.en}
-            </option>
-          ))}
-        </select>
-      </div>
+      {/* Species — separate row */}
+      <select
+        value={filters.species || ''}
+        onChange={(e) => set('species', e.target.value)}
+        style={{
+          width: '100%',
+          padding: '0.4rem 0.5rem',
+          border: '1px solid var(--color-border)',
+          borderRadius: 'var(--radius-md)',
+          fontSize: 12,
+          color: 'var(--color-text)',
+          background: 'var(--color-background)',
+          cursor: 'pointer',
+          transition: 'border-color var(--transition-fast)',
+        }}
+        onFocus={(e) => e.currentTarget.style.borderColor = 'var(--color-primary)'}
+        onBlur={(e) => e.currentTarget.style.borderColor = 'var(--color-border)'}
+      >
+        <option value="">🐟 {t('species.all')}</option>
+        {species.map((s) => (
+          <option key={s.id} value={s.id}>
+            {s.name.en}
+          </option>
+        ))}
+      </select>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react';
 import { useTranslation } from '../i18n/useTranslation';
-import EquipmentCard from './EquipmentCard';
+import CompactEquipmentCard from './CompactEquipmentCard';
 import FishDetailModal from './FishDetailModal';
 
 const typeColors = {
@@ -159,7 +159,7 @@ export default function SpotDetail({ spot, species, equipment }) {
         </div>
       </div>
 
-      {/* Recommended Gear */}
+      {/* Recommended Gear — compact grid */}
       <div style={{ marginBottom: '0.5rem' }}>
         <h3 style={{
           margin: '0 0 0.65rem',
@@ -171,9 +171,13 @@ export default function SpotDetail({ spot, species, equipment }) {
         }}>
           🎣 {t('spot.recommendedGear')}
         </h3>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: '0.5rem',
+        }}>
           {recommendedGear.map((eq) => (
-            <EquipmentCard key={eq.id} item={eq} />
+            <CompactEquipmentCard key={eq.id} item={eq} />
           ))}
         </div>
       </div>

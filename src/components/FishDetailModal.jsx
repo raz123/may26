@@ -132,6 +132,28 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
           </div>
         </div>
 
+        {/* Wikipedia link */}
+        {fish.wiki && (
+          <div style={{ marginBottom: 14 }}>
+            <a
+              href={fish.wiki}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 5,
+                fontSize: 12,
+                color: 'var(--color-cta)',
+                fontWeight: 500,
+                textDecoration: 'underline',
+              }}
+            >
+              📖 Learn more on Wikipedia
+            </a>
+          </div>
+        )}
+
         {/* Info cards */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 20 }}>
           {/* Best Time */}
