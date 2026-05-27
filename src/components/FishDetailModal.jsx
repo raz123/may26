@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useTranslation } from '../i18n/useTranslation';
-import EquipmentCard from './EquipmentCard';
+import CategoryGearBrowser from './CategoryGearBrowser';
 
 const SEASON_LABELS = {
   spring: { en: '🌷 Spring', fr: '🌷 Printemps' },

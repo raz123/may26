@@ -5,8 +5,8 @@ import speciesData from '../data/species.json';
 const CATEGORY_CONFIG = [
   { id: 'rod', emoji: '🎣', label: { en: 'Rods', fr: 'Canne à pêche' } },
   { id: 'reel', emoji: '⚙️', label: { en: 'Reels', fr: 'Moulinets' } },
-  { id: 'lure', emoji: '🪱', label: { en: 'Lures', fr: 'Leurres' } },
-  { id: 'bait', emoji: '🪰', label: { en: 'Bait', fr: 'Appâts' } },
+  { id: 'lure', emoji: '🐟', label: { en: 'Lures', fr: 'Leurres' } },
+  { id: 'bait', emoji: '🐛', label: { en: 'Bait', fr: 'Appâts' } },
   { id: 'line', emoji: '〰️', label: { en: 'Line', fr: 'Fil de pêche' } },
   { id: 'terminal', emoji: '🔗', label: { en: 'Terminal', fr: 'Terminal' } },
   { id: 'tool', emoji: '🛠️', label: { en: 'Tools', fr: 'Outils' } },
