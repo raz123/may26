@@ -17,6 +17,13 @@ const REGIONS = [
   'Saguenay–Lac-Saint-Jean',
 ].sort();
 
+const TYPE_INFO = {
+  all: '',
+  public: 'Free public access — no permit required beyond fishing license.',
+  pourvoirie: 'Outfitter (pourvoirie) — pay-per-day or package. Lodging, boat, and guides often included.',
+  zec: "ZEC (Zone d'Exploitation Contrôlée) — public controlled-harvest territory. Requires daily or seasonal access permit. Managed by local associations.",
+};
+
 export default function FilterBar({ filters, onChange, species }) {
   const { t } = useTranslation();
 
@@ -46,6 +53,7 @@ export default function FilterBar({ filters, onChange, species }) {
           <button
             key={type}
             onClick={() => set('type', type === 'all' ? '' : type)}
+            title={TYPE_INFO[type]}
             style={{
               flex: 1,
               padding: '0.3rem 0.5rem',
@@ -59,6 +67,7 @@ export default function FilterBar({ filters, onChange, species }) {
             }}
           >
             {t(`filter.${type}`)}
+            {type === 'zec' && <span style={{ fontSize: 10, marginLeft: 2, opacity: 0.7 }}>ⓘ</span>}
           </button>
         ))}
       </div>
