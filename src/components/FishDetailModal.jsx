@@ -98,8 +98,22 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
             {fish.emoji}
           </div>
           <div>
-            <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700, color: 'var(--color-text)' }}>
+            <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700, color: 'var(--color-text)', display: 'inline-flex', alignItems: 'center', gap: 6 }}>
               {localized(fish.name)}
+              {fish.wiki && (
+                <a
+                  href={fish.wiki}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Wikipedia"
+                  style={{ display: 'inline-flex', textDecoration: 'none' }}
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="11" fill="#000"/>
+                    <text x="12" y="16" textAnchor="middle" fontSize="13" fontWeight="bold" fill="#fff" fontFamily="sans-serif">W</text>
+                  </svg>
+                </a>
+              )}
             </h2>
             <div style={{ fontSize: 13, color: 'var(--color-text-secondary)', fontStyle: 'italic' }}>
               {fish.scientific}
@@ -131,28 +145,6 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
             ))}
           </div>
         </div>
-
-        {/* Wikipedia link */}
-        {fish.wiki && (
-          <div style={{ marginBottom: 14 }}>
-            <a
-              href={fish.wiki}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: 5,
-                fontSize: 12,
-                color: 'var(--color-cta)',
-                fontWeight: 500,
-                textDecoration: 'underline',
-              }}
-            >
-              📖 Learn more on Wikipedia
-            </a>
-          </div>
-        )}
 
         {/* Info cards */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 20 }}>
