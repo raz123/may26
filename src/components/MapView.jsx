@@ -82,7 +82,7 @@ function UserLocationMarker({ location }) {
 }
 
 export default function MapView({ spots, selectedSpot, onSelectSpot, userLocation }) {
-  const { t } = useTranslation();
+  const { localized } = useTranslation();
 
   const sortedSpots = useMemo(() => {
     if (!userLocation) return spots;
@@ -118,7 +118,7 @@ export default function MapView({ spots, selectedSpot, onSelectSpot, userLocatio
           }}
         >
           <Popup>
-            <div style={{ fontWeight: 600 }}>{spot.name.en}</div>
+            <div style={{ fontWeight: 600 }}>{localized(spot.name)}</div>
             <div style={{ fontSize: 12, color: '#666' }}>{spot.region}</div>
           </Popup>
         </Marker>

@@ -9,8 +9,16 @@ const SEASON_LABELS = {
   winter: { en: '❄️ Winter', fr: '❄️ Hiver' },
 };
 
+const SECTION_TITLES = {
+  season: { en: 'Season', fr: 'Saison' },
+  bestTime: { en: 'Best Time', fr: 'Meilleur moment' },
+  techniques: { en: 'Techniques', fr: 'Techniques' },
+  regulations: { en: 'Regulations', fr: 'Règlements' },
+  recommendedGear: { en: 'Recommended Gear', fr: 'Équipement recommandé' },
+};
+
 export default function FishDetailModal({ fish, equipment, onClose }) {
-  const { t } = useTranslation();
+  const { localized } = useTranslation();
 
   const fishGear = useMemo(() => {
     return equipment.filter((eq) => eq.targetFish.includes(fish.id));
@@ -44,7 +52,6 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
         }}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Close button */}
         <button
           onClick={onClose}
           style={{
@@ -72,7 +79,7 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
           <span style={{ fontSize: 36 }}>{fish.emoji}</span>
           <div>
             <h2 style={{ margin: 0, fontSize: 22, fontWeight: 700, color: '#111827' }}>
-              {fish.name.en} / {fish.name.fr}
+              {localized(fish.name)}
             </h2>
             <div style={{ fontSize: 13, color: '#6b7280', fontStyle: 'italic' }}>
               {fish.scientific}
@@ -83,7 +90,7 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
         {/* Seasons */}
         <div style={{ marginBottom: 12 }}>
           <div style={{ fontWeight: 600, fontSize: 14, color: '#374151', marginBottom: 6 }}>
-            📅 Season
+            📅 {localized(SECTION_TITLES.season)}
           </div>
           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
             {fish.seasons.map((s) => (
@@ -99,7 +106,7 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
                   fontWeight: 500,
                 }}
               >
-                {SEASON_LABELS[s].en}
+                {localized(SEASON_LABELS[s])}
               </span>
             ))}
           </div>
@@ -114,10 +121,10 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
           marginBottom: 12,
         }}>
           <div style={{ fontWeight: 600, fontSize: 13, color: '#92400e', marginBottom: 2 }}>
-            🕐 Best Time
+            🕐 {localized(SECTION_TITLES.bestTime)}
           </div>
           <div style={{ fontSize: 13, color: '#78350f' }}>
-            {fish.bestTime.en}
+            {localized(fish.bestTime)}
           </div>
         </div>
 
@@ -130,10 +137,10 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
           marginBottom: 12,
         }}>
           <div style={{ fontWeight: 600, fontSize: 13, color: '#166534', marginBottom: 2 }}>
-            🎣 Techniques
+            🎣 {localized(SECTION_TITLES.techniques)}
           </div>
           <div style={{ fontSize: 13, color: '#14532d' }}>
-            {fish.techniques.en}
+            {localized(fish.techniques)}
           </div>
         </div>
 
@@ -146,17 +153,17 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
           marginBottom: 16,
         }}>
           <div style={{ fontWeight: 600, fontSize: 13, color: '#991b1b', marginBottom: 2 }}>
-            ⚖️ Regulations
+            ⚖️ {localized(SECTION_TITLES.regulations)}
           </div>
           <div style={{ fontSize: 13, color: '#7f1d1d' }}>
-            {fish.regulations.en}
+            {localized(fish.regulations)}
           </div>
         </div>
 
         {/* Recommended Gear */}
         <div>
           <h3 style={{ margin: '0 0 0.75rem', fontSize: 16, fontWeight: 600, color: '#111827' }}>
-            🛒 {t('spot.recommendedGear')}
+            🛒 {localized(SECTION_TITLES.recommendedGear)}
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
             {fishGear.map((eq) => (

@@ -10,7 +10,6 @@ const typeColors = {
 };
 
 function ZECTooltip() {
-  const { t } = useTranslation();
   return (
     <span
       style={{
@@ -28,7 +27,7 @@ function ZECTooltip() {
         marginLeft: 4,
         position: 'relative',
       }}
-      title="Zone d'Exploitation Contrôlée — public controlled-harvest territory managed by the Quebec government. Access requires a daily or seasonal permit. These areas offer well-managed fishing on lakes and rivers with maintained access roads, boat launches, and camping."
+      title="Zone d'Exploitation Contrôlée — public controlled-harvest territory managed by the Quebec government. Access requires a daily or seasonal permit."
     >
       ?
     </span>
@@ -36,7 +35,7 @@ function ZECTooltip() {
 }
 
 export default function SpotDetail({ spot, species, equipment }) {
-  const { t } = useTranslation();
+  const { t, localized } = useTranslation();
   const [selectedFish, setSelectedFish] = useState(null);
 
   const spotSpecies = useMemo(() => {
@@ -52,11 +51,11 @@ export default function SpotDetail({ spot, species, equipment }) {
 
   return (
     <div style={{ padding: '0 1rem 1rem', overflowY: 'auto', height: '100%' }}>
-      {/* Header with ZEC tooltip */}
+      {/* Header */}
       <div style={{ marginBottom: '1rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
           <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700, color: '#111827' }}>
-            {spot.name.en}
+            {localized(spot.name)}
           </h2>
           <span style={{
             fontSize: 11,
@@ -88,7 +87,7 @@ export default function SpotDetail({ spot, species, equipment }) {
         color: '#374151',
         lineHeight: 1.5,
       }}>
-        {spot.description.en}
+        {localized(spot.description)}
       </div>
 
       {/* Outfitter link */}
@@ -144,7 +143,7 @@ export default function SpotDetail({ spot, species, equipment }) {
               <span style={{ fontSize: 20 }}>{f.emoji}</span>
               <div style={{ flex: 1 }}>
                 <div style={{ fontWeight: 600, fontSize: 14, color: '#111827' }}>
-                  {f.name.en} / {f.name.fr}
+                  {localized(f.name)}
                 </div>
                 <div style={{ fontSize: 12, color: '#6b7280', fontStyle: 'italic' }}>
                   {f.scientific}
@@ -170,7 +169,6 @@ export default function SpotDetail({ spot, species, equipment }) {
         </div>
       </div>
 
-      {/* Fish detail modal */}
       {selectedFish && (
         <FishDetailModal
           fish={selectedFish}

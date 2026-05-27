@@ -8,14 +8,8 @@ const typeColors = {
   zec: '#f59e0b',
 };
 
-const typeLabels = {
-  public: 'public',
-  pourvoirie: 'outfitter',
-  zec: 'ZEC',
-};
-
 export default function SpotList({ spots, selected, onSelect, userLocation, species }) {
-  const { t } = useTranslation();
+  const { t, localized } = useTranslation();
 
   const sorted = useMemo(() => {
     if (!userLocation || !spots.length) return spots;
@@ -60,7 +54,7 @@ export default function SpotList({ spots, selected, onSelect, userLocation, spec
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
               <div>
                 <div style={{ fontWeight: 600, fontSize: 14, color: '#111827', marginBottom: 2 }}>
-                  {spot.name.en}
+                  {localized(spot.name)}
                 </div>
                 <div style={{ fontSize: 12, color: '#6b7280' }}>
                   {spot.region} — {spot.waterBody}
@@ -87,7 +81,7 @@ export default function SpotList({ spots, selected, onSelect, userLocation, spec
                 if (!f) return null;
                 return (
                   <span key={fid} style={{ fontSize: 11, color: '#374151', background: '#f3f4f6', padding: '1px 5px', borderRadius: 3 }}>
-                    {f.emoji} {f.name.en}
+                    {f.emoji} {localized(f.name)}
                   </span>
                 );
               })}

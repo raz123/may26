@@ -8,7 +8,6 @@ const I18nContext = createContext();
 
 export function I18nProvider({ children }) {
   const [lang, setLang] = useState(() => {
-    // Default to browser language or English
     const browserLang = navigator.language?.startsWith('fr') ? 'fr' : 'en';
     return browserLang;
   });
@@ -18,11 +17,18 @@ export function I18nProvider({ children }) {
   }, [lang]);
 
   const toggleLang = useCallback(() => {
-    setLang(prev => prev === 'en' ? 'fr' : 'en');
+    setLang(prev => (prev === 'en' ? 'fr' : 'en'));
   }, []);
 
+  // Helper: given a bilingual object { en: "...", fr: "..." }, return current language value
+  const localized = useCallback((obj) => {
+    if (!obj) return '';
+    if (typeof obj === 'string') return obj;
+    return obj[lang] || obj.en || '';
+  }, [lang]);
+
   return (
-    <I18nContext.Provider value={{ lang, t, toggleLang }}>
+    <I18nContext.Provider value={{ lang, t, toggleLang, localized }}>
       {children}
     </I18nContext.Provider>
   );
