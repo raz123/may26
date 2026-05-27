@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": { "en": "Walleye", "fr": "Doré jaune" },
+    "scientific": "Sander vitreus",
+    "emoji": "🐟"
+  },
+  {
+    "id": 2,
+    "name": { "en": "Northern Pike", "fr": "Grand brochet" },
+    "scientific": "Esox lucius",
+    "emoji": "🐊"
+  },
+  {
+    "id": 3,
+    "name": { "en": "Brook Trout", "fr": "Omble de fontaine" },
+    "scientific": "Salvelinus fontinalis",
+    "emoji": "🎣"
+  },
+  {
+    "id": 4,
+    "name": { "en": "Lake Trout", "fr": "Touladi" },
+    "scientific": "Salvelinus namaycush",
+    "emoji": "🎣"
+  },
+  {
+    "id": 5,
+    "name": { "en": "Smallmouth Bass", "fr": "Achigan à petite bouche" },
+    "scientific": "Micropterus dolomieu",
+    "emoji": "🐠"
+  },
+  {
+    "id": 6,
+    "name": { "en": "Largemouth Bass", "fr": "Achigan à grande bouche" },
+    "scientific": "Micropterus salmoides",
+    "emoji": "🐠"
+  },
+  {
+    "id": 7,
+    "name": { "en": "Muskellunge", "fr": "Maskinongé" },
+    "scientific": "Esox masquinongy",
+    "emoji": "🐊"
+  },
+  {
+    "id": 8,
+    "name": { "en": "Yellow Perch", "fr": "Perchaude" },
+    "scientific": "Perca flavescens",
+    "emoji": "🐟"
+  },
+  {
+    "id": 9,
+    "name": { "en": "Atlantic Salmon", "fr": "Saumon atlantique" },
+    "scientific": "Salmo salar",
+    "emoji": "🐟"
+  },
+  {
+    "id": 10,
+    "name": { "en": "Lake Whitefish", "fr": "Corégone" },
+    "scientific": "Coregonus clupeaformis",
+    "emoji": "🐟"
+  },
+  {
+    "id": 11,
+    "name": { "en": "Rainbow Trout", "fr": "Truite arc-en-ciel" },
+    "scientific": "Oncorhynchus mykiss",
+    "emoji": "🎣"
+  },
+  {
+    "id": 12,
+    "name": { "en": "Sauger", "fr": "Doré noir" },
+    "scientific": "Sander canadensis",
+    "emoji": "🐟"
+  }
+]

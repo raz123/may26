@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Ugly Stik GX2 Spinning Rod",
+    "category": "rod",
+    "description": "Durable fiberglass rod with graphite core — tough enough for pike and walleye.",
+    "asin": "B07S6B1X3T",
+    "tag": "fishqc-20",
+    "priceRange": "$50-$70",
+    "targetFish": [1, 2, 5, 6]
+  },
+  {
+    "id": 2,
+    "name": "Pflueger President Spinning Reel",
+    "category": "reel",
+    "description": "Smooth 10-bearing reel with carbon drag. Excellent value for freshwater fishing.",
+    "asin": "B00B4B5X5Q",
+    "tag": "fishqc-20",
+    "priceRange": "$60-$90",
+    "targetFish": [1, 2, 3, 4, 5, 6, 8]
+  },
+  {
+    "id": 3,
+    "name": "Mepps Aglia Spinner (Size 3)",
+    "category": "lure",
+    "description": "Classic French spinner. Deadly for brook trout, walleye, and pike.",
+    "asin": "B0000AU3N1",
+    "tag": "fishqc-20",
+    "priceRange": "$5-$8",
+    "targetFish": [1, 2, 3, 5, 8]
+  },
+  {
+    "id": 4,
+    "name": "Rapala Original Floating Minnow (F9)",
+    "category": "lure",
+    "description": "Balsa wood minnow that swims with a lifelike wobble. Top choice for pike and bass.",
+    "asin": "B0000AXS3Z",
+    "tag": "fishqc-20",
+    "priceRange": "$10-$15",
+    "targetFish": [1, 2, 5, 6, 7]
+  },
+  {
+    "id": 5,
+    "name": "Berkley PowerBait Garlic Scent Trout Dough",
+    "category": "bait",
+    "description": "Synthetic dough bait that trout can't resist. Works stocked and wild trout.",
+    "asin": "B0009P4Z3M",
+    "tag": "fishqc-20",
+    "priceRange": "$4-$6",
+    "targetFish": [3, 11]
+  },
+  {
+    "id": 6,
+    "name": "Gamakatsu Octopus Circle Hooks (Size 4/0)",
+    "category": "terminal",
+    "description": "Strong, sharp circle hooks for live bait fishing — great for walleye and pike.",
+    "asin": "B001C6Z7N4",
+    "tag": "fishqc-20",
+    "priceRange": "$6-$10",
+    "targetFish": [1, 2, 7]
+  },
+  {
+    "id": 7,
+    "name": "Suffix 832 Advanced Superline (30lb)",
+    "category": "line",
+    "description": "8-strand braided line with zero stretch. Excellent sensitivity and casting distance.",
+    "asin": "B008FS5NMY",
+    "tag": "fishqc-20",
+    "priceRange": "$20-$30",
+    "targetFish": [1, 2, 5, 6, 7]
+  },
+  {
+    "id": 8,
+    "name": "Lindner Rig-N-Fry Jig Head (1/4 oz)",
+    "category": "terminal",
+    "description": "Pre-tied jig head with silicone body — deadly for walleye and perch.",
+    "asin": "B00D4JN6R4",
+    "tag": "fishqc-20",
+    "priceRange": "$4-$7",
+    "targetFish": [1, 8, 12]
+  },
+  {
+    "id": 9,
+    "name": "Whopper Plopper Topwater Lure (Size 90)",
+    "category": "lure",
+    "description": "Surface lure with a buzzing propeller that drives bass crazy in summer.",
+    "asin": "B074J5B9X5",
+    "tag": "fishqc-20",
+    "priceRange": "$14-$18",
+    "targetFish": [5, 6, 7]
+  },
+  {
+    "id": 10,
+    "name": "Smithwick Suspending Rattling Rogue",
+    "category": "lure",
+    "description": "Suspending jerkbait with internal rattles. Excellent for suspended walleye and bass.",
+    "asin": "B000O5N3FW",
+    "tag": "fishqc-20",
+    "priceRange": "$9-$13",
+    "targetFish": [1, 5, 6]
+  },
+  {
+    "id": 11,
+    "name": "Musky Innovations Bull Dawg",
+    "category": "lure",
+    "description": "Soft plastic jerkbait for musky fishing. Big, heavy, built for trophy fish.",
+    "asin": "B00I5X4F9S",
+    "tag": "fishqc-20",
+    "priceRange": "$25-$35",
+    "targetFish": [7]
+  },
+  {
+    "id": 12,
+    "name": "St. Croix Mojo Musky Rod (8ft)",
+    "category": "rod",
+    "description": "Heavy action rod built for throwing big musky baits and fighting large fish.",
+    "asin": "B07KLP4N5R",
+    "tag": "fishqc-20",
+    "priceRange": "$130-$170",
+    "targetFish": [7]
+  },
+  {
+    "id": 13,
+    "name": "Okuma Cold Water SST Downrigger Rod",
+    "category": "rod",
+    "description": "Deep trolling rod for lake trout and whitefish in Quebec's deep cold lakes.",
+    "asin": "B00J4N7FKM",
+    "tag": "fishqc-20",
+    "priceRange": "$80-$110",
+    "targetFish": [4, 10]
+  },
+  {
+    "id": 14,
+    "name": "Blue Fox Vibrax Spinner (Size 4)",
+    "category": "lure",
+    "description": "Throbbing spinner with excellent flash. Catches everything from perch to pike.",
+    "asin": "B0000AUQ3T",
+    "tag": "fishqc-20",
+    "priceRange": "$6-$9",
+    "targetFish": [1, 2, 3, 5, 8, 11]
+  },
+  {
+    "id": 15,
+    "name": "Fishpond Nomad Boat Net",
+    "category": "tool",
+    "description": "Rubber-mesh landing net that's easy on fish. Necessary for safely landing big trout and pike.",
+    "asin": "B01CSJMY9S",
+    "tag": "fishqc-20",
+    "priceRange": "$90-$130",
+    "targetFish": [1, 2, 3, 4, 5, 6, 7]
+  }
+]
