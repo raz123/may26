@@ -18,6 +18,8 @@
   "spot.type.pourvoirie": "Outfitter (Pay)",
   "spot.type.zec": "ZEC (Controlled Zone)",
   "equipment.buyOnAmazon": "Buy on Amazon",
+  "equipment.all": "All",
+  "equipment.none": "No gear matching this selection.",
   "equipment.category": "Category",
   "common.nearMe": "Near Me",
   "common.loading": "Loading...",

@@ -37,5 +37,17 @@
   <body>
     <div id="app"><div id="app-loading"><div class="loading-spinner"></div><div class="loading-text">Loading Quebec fishing spots...</div></div></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Force clear any cached old bundle by checking if its hash is stale
+      if ('caches' in window) {
+        caches.keys().then(function(keys) {
+          keys.forEach(function(key) {
+            if (key.includes('BEdNaBXa') || key.includes('may26')) {
+              caches.delete(key);
+            }
+          });
+        });
+      }
+    </script>
   </body>
 </html>

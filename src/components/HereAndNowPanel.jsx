@@ -1,7 +1,7 @@
 import { useMemo, useState, useEffect } from 'react';
 import { useTranslation } from '../i18n/useTranslation';
 import { haversineDistance } from '../hooks/useGeolocation';
-import CompactEquipmentCard from './CompactEquipmentCard';
+import CategoryGearBrowser from './CategoryGearBrowser';
 
 function getSeason(month) {
   if (month >= 2 && month <= 4) return 'spring';
@@ -301,15 +301,7 @@ export default function HereAndNowPanel({ spots, species, equipment, userLocatio
               <h3 style={{ margin: '0 0 8px', fontSize: 14, fontWeight: 700, color: 'var(--color-text)' }}>
                 🎣 {t('hereAndNow.gearToday')}
               </h3>
-              <div style={{
-                display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
-                gap: '0.5rem',
-              }}>
-                {gearForToday.map((eq) => (
-                  <CompactEquipmentCard key={eq.id} item={eq} />
-                ))}
-              </div>
+              <CategoryGearBrowser equipment={gearForToday} />
             </div>
           )}
         </div>

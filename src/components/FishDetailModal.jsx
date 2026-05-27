@@ -203,29 +203,21 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
         </div>
 
         {/* Recommended Gear */}
-        <div>
-          <h3 style={{
-            margin: '0 0 0.75rem',
-            fontSize: 15,
-            fontWeight: 700,
-            color: 'var(--color-text)',
-            paddingBottom: 8,
-            borderBottom: '1px solid var(--color-border)',
-          }}>
-            🛒 {localized(SECTION_TITLES.recommendedGear)}
-          </h3>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-            {fishGear.length > 0 ? (
-              fishGear.map((eq) => (
-                <EquipmentCard key={eq.id} item={eq} />
-              ))
-            ) : (
-              <div style={{ fontSize: 13, color: 'var(--color-text-secondary)', padding: '0.5rem 0' }}>
-                No specific gear recommendations for this species.
-              </div>
-            )}
+        {fishGear.length > 0 && (
+          <div>
+            <h3 style={{
+              margin: '0 0 0.75rem',
+              fontSize: 15,
+              fontWeight: 700,
+              color: 'var(--color-text)',
+              paddingBottom: 8,
+              borderBottom: '1px solid var(--color-border)',
+            }}>
+              🛒 {localized(SECTION_TITLES.recommendedGear)}
+            </h3>
+            <CategoryGearBrowser equipment={fishGear} />
           </div>
-        </div>
+        )}
       </div>
     </div>
   );

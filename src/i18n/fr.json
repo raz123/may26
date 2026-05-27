@@ -18,6 +18,8 @@
   "spot.type.pourvoirie": "Pourvoirie (Payant)",
   "spot.type.zec": "ZEC (Zone contrôlée)",
   "equipment.buyOnAmazon": "Acheter sur Amazon",
+  "equipment.all": "Tout",
+  "equipment.none": "Aucun équipement correspondant.",
   "equipment.category": "Catégorie",
   "common.nearMe": "Près de moi",
   "common.loading": "Chargement...",
