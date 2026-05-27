@@ -326,5 +326,328 @@
       "fr": "Taille min : variable. Limite quotidienne : 6 (souvent combinée avec la limite de doré jaune). Saison : fin mai à mars."
     },
     "wiki": "https://en.wikipedia.org/wiki/Sauger"
+  },
+  {
+    "id": 13,
+    "name": {
+      "en": "White Sucker",
+      "fr": "Meunier noir"
+    },
+    "scientific": "Catostomus commersonii",
+    "emoji": "🐟",
+    "seasons": [
+      "spring",
+      "summer"
+    ],
+    "bestTime": {
+      "en": "Midday in spring spawning runs.",
+      "fr": "Midi lors des montaisons printanieres."
+    },
+    "techniques": {
+      "en": "Light tackle with worms or corn. Commonly caught incidentally.",
+      "fr": "Equipement leger avec vers ou mais. Souvent pris accessoirement."
+    },
+    "regulations": {
+      "en": "No limit in most zones.",
+      "fr": "Aucune limite dans la plupart des zones."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/White_sucker"
+  },
+  {
+    "id": 14,
+    "name": {
+      "en": "Brown Bullhead",
+      "fr": "Barbotte brune"
+    },
+    "scientific": "Ameiurus nebulosus",
+    "emoji": "🐟",
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Evening and night in warm shallows.",
+      "fr": "Soiree et nuit dans les hauts-fonds chauds."
+    },
+    "techniques": {
+      "en": "Bottom fishing with worms, chicken liver, or stinkbait.",
+      "fr": "Peche au fond avec vers, foie de poulet ou appats puants."
+    },
+    "regulations": {
+      "en": "No minimum size. Daily limit varies.",
+      "fr": "Aucune taille minimale. Limite quotidienne variable."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Brown_bullhead"
+  },
+  {
+    "id": 15,
+    "name": {
+      "en": "Burbot",
+      "fr": "Lotte"
+    },
+    "scientific": "Lota lota",
+    "emoji": "🐟",
+    "seasons": [
+      "fall",
+      "winter"
+    ],
+    "bestTime": {
+      "en": "Night in cold months. Spawns under ice Jan-Feb.",
+      "fr": "Nuit pendant les mois froids. Fraie sous glace janv-fev."
+    },
+    "techniques": {
+      "en": "Ice fishing with tip-ups and large minnows.",
+      "fr": "Peche sous glace avec bascules et gros menes."
+    },
+    "regulations": {
+      "en": "No minimum size in most zones.",
+      "fr": "Aucune taille minimale dans la plupart des zones."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Burbot"
+  },
+  {
+    "id": 16,
+    "name": {
+      "en": "Lake Sturgeon",
+      "fr": "Esturgeon jaune"
+    },
+    "scientific": "Acipenser fulvescens",
+    "emoji": "🐟",
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Summer evenings in deep river channels.",
+      "fr": "Soirees d ete dans les chenaux profonds."
+    },
+    "techniques": {
+      "en": "Bottom fishing with worms or chicken liver. Heavy tackle.",
+      "fr": "Peche au fond avec vers ou foie de poulet. Equipement lourd."
+    },
+    "regulations": {
+      "en": "Catch-and-release only in most zones.",
+      "fr": "Capture-relache seulement dans la plupart des zones."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Lake_sturgeon"
+  },
+  {
+    "id": 17,
+    "name": {
+      "en": "Arctic Char",
+      "fr": "Omble chevalier"
+    },
+    "scientific": "Salvelinus alpinus",
+    "emoji": "🎣",
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Early morning in cold northern lakes.",
+      "fr": "Tot le matin dans les lacs froids du nord."
+    },
+    "techniques": {
+      "en": "Fly fishing with streamers. Trolling small spoons.",
+      "fr": "Peche a la mouche avec streamers. Traine avec petites cuilleres."
+    },
+    "regulations": {
+      "en": "Min size and limits vary by northern zone.",
+      "fr": "Taille min et limites variables selon la zone nordique."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Arctic_char"
+  },
+  {
+    "id": 18,
+    "name": {
+      "en": "Channel Catfish",
+      "fr": "Barbue de riviere"
+    },
+    "scientific": "Ictalurus punctatus",
+    "emoji": "🐟",
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Night, especially after rain.",
+      "fr": "Nuit, surtout apres la pluie."
+    },
+    "techniques": {
+      "en": "Bottom fishing with cut bait or stinkbait.",
+      "fr": "Peche au fond avec appats coupes ou appats puants."
+    },
+    "regulations": {
+      "en": "Min size varies. Daily limit varies.",
+      "fr": "Taille min variable. Limite quotidienne variable."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Channel_catfish"
+  },
+  {
+    "id": 19,
+    "name": {
+      "en": "Black Crappie",
+      "fr": "Marigane noire"
+    },
+    "scientific": "Pomoxis nigromaculatus",
+    "emoji": "🐟",
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Early morning and evening near structure.",
+      "fr": "Tot le matin et en soiree pres des structures."
+    },
+    "techniques": {
+      "en": "Light tackle with small jigs or minnows.",
+      "fr": "Equipement leger avec petits jigs ou menes."
+    },
+    "regulations": {
+      "en": "No minimum size. Daily limit: 15-30.",
+      "fr": "Aucune taille minimale. Limite quotidienne: 15-30."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Black_crappie"
+  },
+  {
+    "id": 20,
+    "name": {
+      "en": "Landlocked Salmon",
+      "fr": "Ouananiche"
+    },
+    "scientific": "Salmo salar ouananiche",
+    "emoji": "🎣",
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Surface feeding at dawn and dusk.",
+      "fr": "Alimentation en surface a l aube et au crepuscule."
+    },
+    "techniques": {
+      "en": "Trolling spoons. Fly fishing with dry flies.",
+      "fr": "Traine avec cuilleres. Mouche seche par soirees calmes."
+    },
+    "regulations": {
+      "en": "Min size varies. Daily limit: 1-3.",
+      "fr": "Taille min variable. Limite quotidienne: 1-3."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Ouananiche"
+  },
+  {
+    "id": 21,
+    "name": {
+      "en": "Lake Cisco",
+      "fr": "Cisco de lac"
+    },
+    "scientific": "Coregonus artedi",
+    "emoji": "🐟",
+    "seasons": [
+      "spring",
+      "summer",
+      "fall",
+      "winter"
+    ],
+    "bestTime": {
+      "en": "Evening surface feeding in summer.",
+      "fr": "Alimentation en surface en soiree d ete."
+    },
+    "techniques": {
+      "en": "Light tackle. Ice fishing with tiny spoons.",
+      "fr": "Equipement leger. Peche sous glace avec petites cuilleres."
+    },
+    "regulations": {
+      "en": "No minimum size. Daily limit: 15-30.",
+      "fr": "Aucune taille minimale. Limite quotidienne: 15-30."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Cisco_(fish)"
+  },
+  {
+    "id": 22,
+    "name": {
+      "en": "Striped Bass",
+      "fr": "Bar rayé"
+    },
+    "scientific": "Morone saxatilis",
+    "emoji": "🐟",
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Dawn and dusk in river currents.",
+      "fr": "Aube et crepuscule dans les courants de riviere."
+    },
+    "techniques": {
+      "en": "Surf casting with poppers. Trolling crankbaits.",
+      "fr": "Lancer de plage avec poppers. Traine avec leurres plongeants."
+    },
+    "regulations": {
+      "en": "Strict catch-and-release in most QC waters.",
+      "fr": "Capture-relache strict dans la plupart des eaux du QC."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Striped_bass"
+  },
+  {
+    "id": 23,
+    "name": {
+      "en": "Brown Trout",
+      "fr": "Truite brune"
+    },
+    "scientific": "Salmo trutta",
+    "emoji": "🎣",
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Late evening hatches in summer.",
+      "fr": "Eclosions tardives en soiree d ete."
+    },
+    "techniques": {
+      "en": "Fly fishing with nymphs and dry flies.",
+      "fr": "Peche a la mouche avec nymphes et mouches seches."
+    },
+    "regulations": {
+      "en": "Min size varies. Daily limit: 5-10.",
+      "fr": "Taille min variable. Limite quotidienne: 5-10."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Brown_trout"
+  },
+  {
+    "id": 24,
+    "name": {
+      "en": "Rock Bass",
+      "fr": "Crapet de roche"
+    },
+    "scientific": "Ambloplites rupestris",
+    "emoji": "🐟",
+    "seasons": [
+      "spring",
+      "summer",
+      "fall"
+    ],
+    "bestTime": {
+      "en": "Midday near rocky shorelines.",
+      "fr": "Midi pres des rives rocheuses."
+    },
+    "techniques": {
+      "en": "Light tackle with small jigs or worms.",
+      "fr": "Equipement leger avec petits jigs ou vers."
+    },
+    "regulations": {
+      "en": "No minimum size. Daily limit: 15-30.",
+      "fr": "Aucune taille minimale. Limite quotidienne: 15-30."
+    },
+    "wiki": "https://en.wikipedia.org/wiki/Rock_bass"
   }
 ]
