@@ -26,5 +26,15 @@
   "region.all": "All Regions",
   "species.all": "All Species",
   "disclosure": "As an Amazon Associate I earn from qualifying purchases. Prices may vary.",
-  "language.toggle": "Français"
+  "language.toggle": "Français",
+  "hereAndNow.title": "Here & Now",
+  "hereAndNow.whatsBiting": "What's Biting Now",
+  "hereAndNow.topSpots": "Top Spots Near You",
+  "hereAndNow.gearToday": "Gear for Today",
+  "hereAndNow.nothingBiting": "No species match current conditions. Try a different spot or time.",
+  "hereAndNow.needLocation": "Enable location to see nearby spots.",
+  "hereAndNow.noSpots": "No prime spots found nearby. Try expanding your search.",
+  "hereAndNow.fishActive": "fish active",
+  "hereAndNow.close": "Close",
+  "hereAndNow.button": "📍 Here & Now"
 }

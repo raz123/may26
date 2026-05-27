@@ -142,6 +142,45 @@ function AppInner() {
         </div>
       </div>
 
+      {/* Here & Now button */}
+      <button
+        onClick={() => setShowHereAndNow(true)}
+        style={{
+          position: 'fixed',
+          bottom: 40,
+          right: 16,
+          zIndex: 999,
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: 6,
+          padding: '0.65rem 1rem',
+          background: 'linear-gradient(135deg, #059669, #10B981)',
+          color: '#fff',
+          border: 'none',
+          borderRadius: 'var(--radius-lg)',
+          fontWeight: 700,
+          fontSize: 13,
+          cursor: 'pointer',
+          boxShadow: '0 4px 16px rgba(5, 150, 105, 0.35)',
+          transition: 'all var(--transition-fast)',
+        }}
+        onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
+        onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+      >
+        {t('hereAndNow.button')}
+      </button>
+
+      {showHereAndNow && (
+        <HereAndNowPanel
+          spots={spotsData}
+          species={speciesData}
+          equipment={equipmentData}
+          userLocation={userLocation}
+          onClose={() => setShowHereAndNow(false)}
+          onSelectSpot={(spot) => { setSelectedSpot(spot); }}
+        />
+      )}
+
       {/* Affiliate disclosure */}
       <div style={{
         padding: '0.4rem 1rem',

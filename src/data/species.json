@@ -24,7 +24,12 @@
       "en": "Min size: 37cm (some zones). Daily limit: 6 (varies by fishing zone). Season: late May to March.",
       "fr": "Taille min : 37 cm (certaines zones). Limite quotidienne : 6 (varie selon la zone). Saison : fin mai à mars."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Walleye"
+    "wiki": "https://en.wikipedia.org/wiki/Walleye",
+    "bestPeriods": [
+      "dawn",
+      "dusk",
+      "night"
+    ]
   },
   {
     "id": 2,
@@ -52,7 +57,12 @@
       "en": "Min size: varies by zone (often 50-70cm). Daily limit: 3-6. No closed season in most zones.",
       "fr": "Taille min : varie selon la zone (souvent 50-70 cm). Limite quotidienne : 3-6. Aucune fermeture dans la plupart des zones."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Northern_pike"
+    "wiki": "https://en.wikipedia.org/wiki/Northern_pike",
+    "bestPeriods": [
+      "morning",
+      "afternoon",
+      "dusk"
+    ]
   },
   {
     "id": 3,
@@ -79,7 +89,12 @@
       "en": "Min size: varies. Daily limit: 5-15 depending on zone. Season: varies by zone — check MRNF guidelines.",
       "fr": "Taille min : variable. Limite quotidienne : 5-15 selon la zone. Saison : variable selon la zone — consulter les directives du MRNF."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Brook_trout"
+    "wiki": "https://en.wikipedia.org/wiki/Brook_trout",
+    "bestPeriods": [
+      "dawn",
+      "morning",
+      "dusk"
+    ]
   },
   {
     "id": 4,
@@ -107,7 +122,13 @@
       "en": "Min size: varies by zone (often 45-60cm). Daily limit: 2-4. Many zones require catch-and-release for large fish.",
       "fr": "Taille min : variable selon la zone (souvent 45-60 cm). Limite quotidienne : 2-4. Plusieurs zones exigent la capture-relâche pour les gros spécimens."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Lake_trout"
+    "wiki": "https://en.wikipedia.org/wiki/Lake_trout",
+    "bestPeriods": [
+      "dawn",
+      "morning",
+      "afternoon",
+      "dusk"
+    ]
   },
   {
     "id": 5,
@@ -134,7 +155,11 @@
       "en": "Min size: 30cm in most zones. Daily limit: 5-6. Season: usually late June to October.",
       "fr": "Taille min : 30 cm dans la plupart des zones. Limite quotidienne : 5-6. Saison : généralement fin juin à octobre."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Smallmouth_bass"
+    "wiki": "https://en.wikipedia.org/wiki/Smallmouth_bass",
+    "bestPeriods": [
+      "afternoon",
+      "dusk"
+    ]
   },
   {
     "id": 6,
@@ -161,7 +186,11 @@
       "en": "Min size: 30cm in most zones. Daily limit: 5-6. Season: usually late June to October.",
       "fr": "Taille min : 30 cm dans la plupart des zones. Limite quotidienne : 5-6. Saison : généralement fin juin à octobre."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Largemouth_bass"
+    "wiki": "https://en.wikipedia.org/wiki/Largemouth_bass",
+    "bestPeriods": [
+      "dawn",
+      "dusk"
+    ]
   },
   {
     "id": 7,
@@ -188,7 +217,12 @@
       "en": "Min size: 100-120cm depending on zone. Daily limit: 0-1 (catch-and-release encouraged). Season: varies — typically June to November.",
       "fr": "Taille min : 100-120 cm selon la zone. Limite quotidienne : 0-1 (capture-relâche encouragée). Saison : variable — généralement juin à novembre."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Muskellunge"
+    "wiki": "https://en.wikipedia.org/wiki/Muskellunge",
+    "bestPeriods": [
+      "dawn",
+      "afternoon",
+      "dusk"
+    ]
   },
   {
     "id": 8,
@@ -216,7 +250,12 @@
       "en": "No minimum size in most zones. Daily limit: 30-50. No closed season in most waters.",
       "fr": "Aucune taille minimale dans la plupart des zones. Limite quotidienne : 30-50. Aucune fermeture dans la plupart des eaux."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Yellow_perch"
+    "wiki": "https://en.wikipedia.org/wiki/Yellow_perch",
+    "bestPeriods": [
+      "morning",
+      "midday",
+      "afternoon"
+    ]
   },
   {
     "id": 9,
@@ -243,7 +282,11 @@
       "en": "Strict catch-and-release on most Quebec rivers. Barbless hooks mandatory. Season dates vary by river — check specific river regulations.",
       "fr": "Capture-relâche strict sur la plupart des rivières du Québec. Hameçons sans ardillon obligatoires. Dates de saison variables selon la rivière — vérifier les règlements spécifiques."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Atlantic_salmon"
+    "wiki": "https://en.wikipedia.org/wiki/Atlantic_salmon",
+    "bestPeriods": [
+      "dawn",
+      "dusk"
+    ]
   },
   {
     "id": 10,
@@ -271,7 +314,11 @@
       "en": "Min size: varies. Daily limit: 10-15. Popular for ice fishing in Saguenay and Côte-Nord regions.",
       "fr": "Taille min : variable. Limite quotidienne : 10-15. Populaire pour la pêche sous glace au Saguenay et sur la Côte-Nord."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Lake_whitefish"
+    "wiki": "https://en.wikipedia.org/wiki/Lake_whitefish",
+    "bestPeriods": [
+      "dawn",
+      "dusk"
+    ]
   },
   {
     "id": 11,
@@ -298,7 +345,12 @@
       "en": "Min size: varies. Daily limit: 5-15 depending on zone. Many stocked lakes have special regulations.",
       "fr": "Taille min : variable. Limite quotidienne : 5-15 selon la zone. Plusieurs lacs ensemencés ont des règlements spéciaux."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Rainbow_trout"
+    "wiki": "https://en.wikipedia.org/wiki/Rainbow_trout",
+    "bestPeriods": [
+      "dawn",
+      "afternoon",
+      "dusk"
+    ]
   },
   {
     "id": 12,
@@ -325,7 +377,12 @@
       "en": "Min size: varies. Daily limit: 6 (often combined with walleye limit). Season: late May to March.",
       "fr": "Taille min : variable. Limite quotidienne : 6 (souvent combinée avec la limite de doré jaune). Saison : fin mai à mars."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Sauger"
+    "wiki": "https://en.wikipedia.org/wiki/Sauger",
+    "bestPeriods": [
+      "dawn",
+      "dusk",
+      "night"
+    ]
   },
   {
     "id": 13,
@@ -351,7 +408,10 @@
       "en": "No limit in most zones.",
       "fr": "Aucune limite dans la plupart des zones."
     },
-    "wiki": "https://en.wikipedia.org/wiki/White_sucker"
+    "wiki": "https://en.wikipedia.org/wiki/White_sucker",
+    "bestPeriods": [
+      "midday"
+    ]
   },
   {
     "id": 14,
@@ -378,7 +438,11 @@
       "en": "No minimum size. Daily limit varies.",
       "fr": "Aucune taille minimale. Limite quotidienne variable."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Brown_bullhead"
+    "wiki": "https://en.wikipedia.org/wiki/Brown_bullhead",
+    "bestPeriods": [
+      "dusk",
+      "night"
+    ]
   },
   {
     "id": 15,
@@ -404,7 +468,10 @@
       "en": "No minimum size in most zones.",
       "fr": "Aucune taille minimale dans la plupart des zones."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Burbot"
+    "wiki": "https://en.wikipedia.org/wiki/Burbot",
+    "bestPeriods": [
+      "night"
+    ]
   },
   {
     "id": 16,
@@ -431,7 +498,10 @@
       "en": "Catch-and-release only in most zones.",
       "fr": "Capture-relache seulement dans la plupart des zones."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Lake_sturgeon"
+    "wiki": "https://en.wikipedia.org/wiki/Lake_sturgeon",
+    "bestPeriods": [
+      "dusk"
+    ]
   },
   {
     "id": 17,
@@ -458,7 +528,10 @@
       "en": "Min size and limits vary by northern zone.",
       "fr": "Taille min et limites variables selon la zone nordique."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Arctic_char"
+    "wiki": "https://en.wikipedia.org/wiki/Arctic_char",
+    "bestPeriods": [
+      "dawn"
+    ]
   },
   {
     "id": 18,
@@ -485,7 +558,11 @@
       "en": "Min size varies. Daily limit varies.",
       "fr": "Taille min variable. Limite quotidienne variable."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Channel_catfish"
+    "wiki": "https://en.wikipedia.org/wiki/Channel_catfish",
+    "bestPeriods": [
+      "dusk",
+      "night"
+    ]
   },
   {
     "id": 19,
@@ -512,7 +589,11 @@
       "en": "No minimum size. Daily limit: 15-30.",
       "fr": "Aucune taille minimale. Limite quotidienne: 15-30."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Black_crappie"
+    "wiki": "https://en.wikipedia.org/wiki/Black_crappie",
+    "bestPeriods": [
+      "dawn",
+      "dusk"
+    ]
   },
   {
     "id": 20,
@@ -539,7 +620,11 @@
       "en": "Min size varies. Daily limit: 1-3.",
       "fr": "Taille min variable. Limite quotidienne: 1-3."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Ouananiche"
+    "wiki": "https://en.wikipedia.org/wiki/Ouananiche",
+    "bestPeriods": [
+      "dawn",
+      "dusk"
+    ]
   },
   {
     "id": 21,
@@ -567,7 +652,10 @@
       "en": "No minimum size. Daily limit: 15-30.",
       "fr": "Aucune taille minimale. Limite quotidienne: 15-30."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Cisco_(fish)"
+    "wiki": "https://en.wikipedia.org/wiki/Cisco_(fish)",
+    "bestPeriods": [
+      "dusk"
+    ]
   },
   {
     "id": 22,
@@ -594,7 +682,11 @@
       "en": "Strict catch-and-release in most QC waters.",
       "fr": "Capture-relache strict dans la plupart des eaux du QC."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Striped_bass"
+    "wiki": "https://en.wikipedia.org/wiki/Striped_bass",
+    "bestPeriods": [
+      "dawn",
+      "dusk"
+    ]
   },
   {
     "id": 23,
@@ -621,7 +713,10 @@
       "en": "Min size varies. Daily limit: 5-10.",
       "fr": "Taille min variable. Limite quotidienne: 5-10."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Brown_trout"
+    "wiki": "https://en.wikipedia.org/wiki/Brown_trout",
+    "bestPeriods": [
+      "dusk"
+    ]
   },
   {
     "id": 24,
@@ -648,6 +743,10 @@
       "en": "No minimum size. Daily limit: 15-30.",
       "fr": "Aucune taille minimale. Limite quotidienne: 15-30."
     },
-    "wiki": "https://en.wikipedia.org/wiki/Rock_bass"
+    "wiki": "https://en.wikipedia.org/wiki/Rock_bass",
+    "bestPeriods": [
+      "midday",
+      "afternoon"
+    ]
   }
 ]

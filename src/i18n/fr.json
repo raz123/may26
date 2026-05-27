@@ -26,5 +26,15 @@
   "region.all": "Toutes les régions",
   "species.all": "Toutes les espèces",
   "disclosure": "En tant qu'associé Amazon, je réalise un bénéfice sur les achats éligibles. Les prix peuvent varier.",
-  "language.toggle": "English"
+  "language.toggle": "English",
+  "hereAndNow.title": "Ici & Maintenant",
+  "hereAndNow.whatsBiting": "Ça mord maintenant",
+  "hereAndNow.topSpots": "Meilleurs spots près de chez vous",
+  "hereAndNow.gearToday": "Équipement du jour",
+  "hereAndNow.nothingBiting": "Aucune espèce ne correspond aux conditions actuelles.",
+  "hereAndNow.needLocation": "Activez la localisation pour voir les spots à proximité.",
+  "hereAndNow.noSpots": "Aucun spot trouvé à proximité.",
+  "hereAndNow.fishActive": "poissons actifs",
+  "hereAndNow.close": "Fermer",
+  "hereAndNow.button": "📍 Ici & Maintenant"
 }
