@@ -7,7 +7,7 @@ import SpotList from './components/SpotList';
 import SpotDetail from './components/SpotDetail';
 import FilterBar from './components/FilterBar';
 
-import spotsData from './data/spots.json';
+// Lazy-load large data file — keeps initial bundle ~280KB instead of 972KB
 import speciesData from './data/species.json';
 import equipmentData from './data/equipment.json';
 
@@ -15,9 +15,16 @@ function AppInner() {
   const [selectedSpot, setSelectedSpot] = useState(null);
   const [filters, setFilters] = useState({ type: '', region: '', species: '', search: '' });
   const { location: userLocation, loading: geoLoading, requestLocation } = useGeolocation();
+  const [spotsData, setSpotsData] = useState(null);
   const { t } = useTranslation();
 
+  // Lazy-load spots on mount to avoid bundling 1.3MB into initial JS
+  useEffect(() => {
+    import('./data/spots.json').then(mod => { setSpotsData(mod.default); });
+  }, []);
+
   const filteredSpots = useMemo(() => {
+    if (!spotsData) return [];
     let result = spotsData;
 
     if (filters.type) {
@@ -45,16 +52,24 @@ function AppInner() {
     }
 
     return result;
-  }, [filters]);
+  }, [filters, spotsData]);
 
   const sortedSpots = useMemo(() => {
+    if (!spotsData) return [];
     if (!userLocation) return filteredSpots;
     return [...filteredSpots].sort((a, b) => {
       const dA = haversineDistance(userLocation.lat, userLocation.lng, a.lat, a.lng);
       const dB = haversineDistance(userLocation.lat, userLocation.lng, b.lat, b.lng);
       return dA - dB;
     });
-  }, [filteredSpots, userLocation]);
+  }, [filteredSpots, userLocation, spotsData]);
+
+  // Remove loading spinner once data arrives
+  useEffect(() => {
+    if (!spotsData) return;
+    const el = document.getElementById('app-loading');
+    if (el) el.remove();
+  }, [spotsData]);
 
   useEffect(() => {
     if (!selectedSpot && sortedSpots.length > 0) {
@@ -170,7 +185,7 @@ function AppInner() {
         {t('hereAndNow.button')}
       </button>
 
-      {showHereAndNow && (
+      {showHereAndNow && spotsData && (
         <HereAndNowPanel
           spots={spotsData}
           species={speciesData}
