@@ -15,8 +15,13 @@ import './index.css';
   sessionStorage.setItem('app_version', VERSION);
 })();
 
-// Catch and display runtime errors for debugging
+// Catch and display runtime errors for debugging — auto-reload if stale bundle
 window.addEventListener('error', function(e) {
+  // If the error comes from an old cached bundle, force a fresh load
+  if (e.filename && /index-(BEdNaBXa|D0JSevUK|Bus79q79)\.js/.test(e.filename)) {
+    location.reload(true);
+    return;
+  }
   var el = document.getElementById('app-error');
   if (!el) {
     el = document.createElement('div');
