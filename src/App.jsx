@@ -6,6 +6,7 @@ import MapView from './components/MapView';
 import SpotList from './components/SpotList';
 import SpotDetail from './components/SpotDetail';
 import FilterBar from './components/FilterBar';
+import HereAndNowPanel from './components/HereAndNowPanel';
 
 // Lazy-load large data file — keeps initial bundle ~280KB instead of 972KB
 import speciesData from './data/species.json';
@@ -15,6 +16,7 @@ function AppInner() {
   const [selectedSpot, setSelectedSpot] = useState(null);
   const [filters, setFilters] = useState({ type: '', region: '', species: '', search: '' });
   const { location: userLocation, loading: geoLoading, requestLocation } = useGeolocation();
+  const [showHereAndNow, setShowHereAndNow] = useState(false);
   const [spotsData, setSpotsData] = useState(null);
   const { t } = useTranslation();
 
