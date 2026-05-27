@@ -26,11 +26,14 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
 
   return (
     <div
+      role="dialog"
+      aria-modal="true"
       style={{
         position: 'fixed',
         inset: 0,
         zIndex: 9999,
-        background: 'rgba(0,0,0,0.5)',
+        background: 'rgba(0,0,0,0.4)',
+        backdropFilter: 'blur(4px)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -40,56 +43,73 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
     >
       <div
         style={{
-          background: '#fff',
-          borderRadius: 12,
+          background: 'var(--color-surface)',
+          borderRadius: 'var(--radius-xl)',
           maxWidth: 580,
           width: '100%',
           maxHeight: '85vh',
           overflowY: 'auto',
-          padding: '1.5rem',
-          boxShadow: '0 10px 40px rgba(0,0,0,0.15)',
+          padding: '1.75rem',
+          boxShadow: 'var(--shadow-xl)',
           position: 'relative',
         }}
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Close button */}
         <button
           onClick={onClose}
+          aria-label="Close"
           style={{
             position: 'absolute',
             top: 12,
             right: 12,
-            background: '#f3f4f6',
+            background: 'var(--color-background)',
             border: 'none',
             borderRadius: 20,
             width: 32,
             height: 32,
             cursor: 'pointer',
             fontSize: 18,
-            color: '#6b7280',
+            color: 'var(--color-text-secondary)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
+            transition: 'all var(--transition-fast)',
           }}
+          onMouseEnter={(e) => { e.currentTarget.style.background = '#e5e7eb'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.background = 'var(--color-background)'; }}
         >
           ✕
         </button>
 
         {/* Header */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 12 }}>
-          <span style={{ fontSize: 36 }}>{fish.emoji}</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 16 }}>
+          <div style={{
+            width: 48,
+            height: 48,
+            borderRadius: 'var(--radius-lg)',
+            background: 'linear-gradient(135deg, #f0fdf4, #dcfce7)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: 28,
+            border: '1px solid #bbf7d0',
+          }}>
+            {fish.emoji}
+          </div>
           <div>
-            <h2 style={{ margin: 0, fontSize: 22, fontWeight: 700, color: '#111827' }}>
+            <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700, color: 'var(--color-text)' }}>
               {localized(fish.name)}
             </h2>
-            <div style={{ fontSize: 13, color: '#6b7280', fontStyle: 'italic' }}>
+            <div style={{ fontSize: 13, color: 'var(--color-text-secondary)', fontStyle: 'italic' }}>
               {fish.scientific}
             </div>
           </div>
         </div>
 
         {/* Seasons */}
-        <div style={{ marginBottom: 12 }}>
-          <div style={{ fontWeight: 600, fontSize: 14, color: '#374151', marginBottom: 6 }}>
+        <div style={{ marginBottom: 14 }}>
+          <div style={{ fontWeight: 600, fontSize: 13, color: 'var(--color-text)', marginBottom: 6 }}>
             📅 {localized(SECTION_TITLES.season)}
           </div>
           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
@@ -97,10 +117,10 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
               <span
                 key={s}
                 style={{
-                  padding: '3px 10px',
+                  padding: '4px 12px',
                   background: '#eff6ff',
                   border: '1px solid #bfdbfe',
-                  borderRadius: 12,
+                  borderRadius: 20,
                   fontSize: 12,
                   color: '#1d4ed8',
                   fontWeight: 500,
@@ -112,63 +132,76 @@ export default function FishDetailModal({ fish, equipment, onClose }) {
           </div>
         </div>
 
-        {/* Best Time */}
-        <div style={{
-          background: '#fffbeb',
-          border: '1px solid #fde68a',
-          borderRadius: 8,
-          padding: '0.6rem 0.8rem',
-          marginBottom: 12,
-        }}>
-          <div style={{ fontWeight: 600, fontSize: 13, color: '#92400e', marginBottom: 2 }}>
-            🕐 {localized(SECTION_TITLES.bestTime)}
+        {/* Info cards */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginBottom: 20 }}>
+          {/* Best Time */}
+          <div style={{
+            background: '#fffbeb',
+            border: '1px solid #fde68a',
+            borderRadius: 'var(--radius-md)',
+            padding: '0.65rem 0.85rem',
+          }}>
+            <div style={{ fontWeight: 600, fontSize: 12, color: '#92400e', marginBottom: 3 }}>
+              🕐 {localized(SECTION_TITLES.bestTime)}
+            </div>
+            <div style={{ fontSize: 13, color: '#78350f', lineHeight: 1.5 }}>
+              {localized(fish.bestTime)}
+            </div>
           </div>
-          <div style={{ fontSize: 13, color: '#78350f' }}>
-            {localized(fish.bestTime)}
-          </div>
-        </div>
 
-        {/* Techniques */}
-        <div style={{
-          background: '#f0fdf4',
-          border: '1px solid #bbf7d0',
-          borderRadius: 8,
-          padding: '0.6rem 0.8rem',
-          marginBottom: 12,
-        }}>
-          <div style={{ fontWeight: 600, fontSize: 13, color: '#166534', marginBottom: 2 }}>
-            🎣 {localized(SECTION_TITLES.techniques)}
+          {/* Techniques */}
+          <div style={{
+            background: '#f0fdf4',
+            border: '1px solid #bbf7d0',
+            borderRadius: 'var(--radius-md)',
+            padding: '0.65rem 0.85rem',
+          }}>
+            <div style={{ fontWeight: 600, fontSize: 12, color: '#166534', marginBottom: 3 }}>
+              🎣 {localized(SECTION_TITLES.techniques)}
+            </div>
+            <div style={{ fontSize: 13, color: '#14532d', lineHeight: 1.5 }}>
+              {localized(fish.techniques)}
+            </div>
           </div>
-          <div style={{ fontSize: 13, color: '#14532d' }}>
-            {localized(fish.techniques)}
-          </div>
-        </div>
 
-        {/* Regulations */}
-        <div style={{
-          background: '#fef2f2',
-          border: '1px solid #fecaca',
-          borderRadius: 8,
-          padding: '0.6rem 0.8rem',
-          marginBottom: 16,
-        }}>
-          <div style={{ fontWeight: 600, fontSize: 13, color: '#991b1b', marginBottom: 2 }}>
-            ⚖️ {localized(SECTION_TITLES.regulations)}
-          </div>
-          <div style={{ fontSize: 13, color: '#7f1d1d' }}>
-            {localized(fish.regulations)}
+          {/* Regulations */}
+          <div style={{
+            background: '#fef2f2',
+            border: '1px solid #fecaca',
+            borderRadius: 'var(--radius-md)',
+            padding: '0.65rem 0.85rem',
+          }}>
+            <div style={{ fontWeight: 600, fontSize: 12, color: '#991b1b', marginBottom: 3 }}>
+              ⚖️ {localized(SECTION_TITLES.regulations)}
+            </div>
+            <div style={{ fontSize: 13, color: '#7f1d1d', lineHeight: 1.5 }}>
+              {localized(fish.regulations)}
+            </div>
           </div>
         </div>
 
         {/* Recommended Gear */}
         <div>
-          <h3 style={{ margin: '0 0 0.75rem', fontSize: 16, fontWeight: 600, color: '#111827' }}>
+          <h3 style={{
+            margin: '0 0 0.75rem',
+            fontSize: 15,
+            fontWeight: 700,
+            color: 'var(--color-text)',
+            paddingBottom: 8,
+            borderBottom: '1px solid var(--color-border)',
+          }}>
             🛒 {localized(SECTION_TITLES.recommendedGear)}
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-            {fishGear.map((eq) => (
-              <EquipmentCard key={eq.id} item={eq} />
-            ))}
+            {fishGear.length > 0 ? (
+              fishGear.map((eq) => (
+                <EquipmentCard key={eq.id} item={eq} />
+              ))
+            ) : (
+              <div style={{ fontSize: 13, color: 'var(--color-text-secondary)', padding: '0.5rem 0' }}>
+                No specific gear recommendations for this species.
+              </div>
+            )}
           </div>
         </div>
       </div>

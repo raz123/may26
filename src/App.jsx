@@ -17,7 +17,6 @@ function AppInner() {
   const { location: userLocation, loading: geoLoading, requestLocation } = useGeolocation();
   const { t } = useTranslation();
 
-  // Filter spots
   const filteredSpots = useMemo(() => {
     let result = spotsData;
 
@@ -48,7 +47,6 @@ function AppInner() {
     return result;
   }, [filters]);
 
-  // Sort nearby if geolocation enabled
   const sortedSpots = useMemo(() => {
     if (!userLocation) return filteredSpots;
     return [...filteredSpots].sort((a, b) => {
@@ -58,7 +56,6 @@ function AppInner() {
     });
   }, [filteredSpots, userLocation]);
 
-  // Auto-select first spot if none selected
   useEffect(() => {
     if (!selectedSpot && sortedSpots.length > 0) {
       setSelectedSpot(sortedSpots[0]);
@@ -68,7 +65,7 @@ function AppInner() {
   const handleNearMe = () => requestLocation();
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', width: '100vw', overflow: 'hidden' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', width: '100vw', overflow: 'hidden', background: 'var(--color-background)' }}>
       <Header onNearMe={handleNearMe} userLocation={userLocation} loading={geoLoading} />
 
       <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
@@ -78,18 +75,18 @@ function AppInner() {
           minWidth: 340,
           display: 'flex',
           flexDirection: 'column',
-          borderRight: '1px solid #e5e7eb',
-          background: '#fff',
+          borderRight: '1px solid var(--color-border)',
+          background: 'var(--color-surface)',
         }}>
           <FilterBar filters={filters} onChange={setFilters} species={speciesData} />
 
           <div style={{
             padding: '0.5rem 1rem',
             fontSize: 12,
-            color: '#9ca3af',
-            borderTop: '1px solid #f3f4f6',
-            borderBottom: '1px solid #f3f4f6',
-            background: '#fafafa',
+            color: 'var(--color-text-secondary)',
+            borderTop: '1px solid var(--color-border)',
+            borderBottom: '1px solid var(--color-border)',
+            background: 'var(--color-background)',
           }}>
             {sortedSpots.length} spot{sortedSpots.length !== 1 ? 's' : ''}
             {userLocation ? ' — sorted by distance' : ''}
@@ -115,13 +112,12 @@ function AppInner() {
             />
           </div>
 
-          {/* Detail panel */}
           {selectedSpot && (
             <div style={{
               maxHeight: '45%',
               overflowY: 'auto',
-              borderTop: '1px solid #e5e7eb',
-              background: '#fff',
+              borderTop: '1px solid var(--color-border)',
+              background: 'var(--color-surface)',
             }}>
               <SpotDetail
                 spot={selectedSpot}
@@ -137,8 +133,8 @@ function AppInner() {
               textAlign: 'center',
               color: '#9ca3af',
               fontSize: 14,
-              borderTop: '1px solid #e5e7eb',
-              background: '#fff',
+              borderTop: '1px solid var(--color-border)',
+              background: 'var(--color-surface)',
             }}>
               {t('spot.noSelection')}
             </div>
@@ -150,9 +146,9 @@ function AppInner() {
       <div style={{
         padding: '0.4rem 1rem',
         fontSize: 10,
-        color: '#9ca3af',
-        background: '#fafafa',
-        borderTop: '1px solid #e5e7eb',
+        color: 'var(--color-text-secondary)',
+        background: 'var(--color-surface)',
+        borderTop: '1px solid var(--color-border)',
         textAlign: 'center',
       }}>
         {t('disclosure')}

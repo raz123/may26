@@ -40,59 +40,72 @@ export default function SpotList({ spots, selected, onSelect, userLocation, spec
           <div
             key={spot.id}
             onClick={() => onSelect(spot)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onSelect(spot); }}
             style={{
               padding: '0.75rem 1rem',
               cursor: 'pointer',
-              borderBottom: '1px solid #f3f4f6',
-              background: isSelected ? '#eff6ff' : '#fff',
+              borderBottom: '1px solid var(--color-border)',
+              background: isSelected ? 'var(--color-hover-bg)' : 'var(--color-surface)',
               borderLeft: isSelected ? `3px solid ${typeColors[spot.type]}` : '3px solid transparent',
-              transition: 'background 0.1s',
+              transition: 'all var(--transition-fast)',
             }}
-            onMouseEnter={(e) => { if (!isSelected) e.currentTarget.style.background = '#f9fafb'; }}
-            onMouseLeave={(e) => { if (!isSelected) e.currentTarget.style.background = '#fff'; }}
+            onMouseEnter={(e) => {
+              if (!isSelected) e.currentTarget.style.background = '#f9fafb';
+            }}
+            onMouseLeave={(e) => {
+              if (!isSelected) e.currentTarget.style.background = 'var(--color-surface)';
+            }}
           >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
               <div>
-                <div style={{ fontWeight: 600, fontSize: 14, color: '#111827', marginBottom: 2 }}>
+                <div style={{ fontWeight: 600, fontSize: 14, color: 'var(--color-text)', marginBottom: 2 }}>
                   {localized(spot.name)}
                 </div>
-                <div style={{ fontSize: 12, color: '#6b7280' }}>
+                <div style={{ fontSize: 12, color: 'var(--color-text-secondary)' }}>
                   {spot.region} — {spot.waterBody}
                 </div>
               </div>
-              <div>
-                <span style={{
-                  fontSize: 10,
-                  fontWeight: 600,
-                  textTransform: 'uppercase',
-                  color: '#fff',
-                  background: typeColors[spot.type],
-                  padding: '2px 6px',
-                  borderRadius: 3,
-                }}>
-                  {t(`filter.${spot.type}`)}
-                </span>
-              </div>
+              <span style={{
+                fontSize: 10,
+                fontWeight: 600,
+                textTransform: 'uppercase',
+                letterSpacing: 0.5,
+                color: '#fff',
+                background: typeColors[spot.type],
+                padding: '2px 7px',
+                borderRadius: 'var(--radius-sm)',
+              }}>
+                {t(`filter.${spot.type}`)}
+              </span>
             </div>
 
-            <div style={{ display: 'flex', gap: 4, marginTop: 4, flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: 4, marginTop: 6, flexWrap: 'wrap' }}>
               {spot.fish.slice(0, 4).map((fid) => {
                 const f = species.find((s) => s.id === fid);
                 if (!f) return null;
                 return (
-                  <span key={fid} style={{ fontSize: 11, color: '#374151', background: '#f3f4f6', padding: '1px 5px', borderRadius: 3 }}>
+                  <span key={fid} style={{
+                    fontSize: 11,
+                    color: 'var(--color-primary)',
+                    background: '#f0fdf4',
+                    padding: '2px 6px',
+                    borderRadius: 'var(--radius-sm)',
+                    border: '1px solid #bbf7d0',
+                  }}>
                     {f.emoji} {localized(f.name)}
                   </span>
                 );
               })}
               {spot.fish.length > 4 && (
-                <span style={{ fontSize: 11, color: '#6b7280' }}>+{spot.fish.length - 4}</span>
+                <span style={{ fontSize: 11, color: 'var(--color-text-secondary)' }}>+{spot.fish.length - 4}</span>
               )}
             </div>
 
             {dist !== null && (
               <div style={{ fontSize: 11, color: '#9ca3af', marginTop: 4 }}>
-                {dist.toFixed(1)} {t('common.distance')}
+                📍 {dist.toFixed(1)} {t('common.distance')}
               </div>
             )}
           </div>
