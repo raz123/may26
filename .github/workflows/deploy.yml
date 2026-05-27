@@ -36,8 +36,8 @@ jobs:
           # Old hashes from broken deploys — serve fixed code under old names
           for OLD in BEdNaBXa D0JSevUK Bus79q79 DC01fIDd CyqxX5bC; do
             OLD_FILE="index-${OLD}.js"
-            if [ "$NEW_JS" != "$OLD_FILE" ] && [ ! -f "$OLD_FILE" ]; then
-              cp "$NEW_JS" "$OLD_FILE"
+            if [ "$NEW_JS" != "$OLD_FILE" ]; then
+              cp -f "$NEW_JS" "$OLD_FILE"
               echo "Copied $NEW_JS -> $OLD_FILE"
             fi
           done
