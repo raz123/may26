@@ -34,7 +34,7 @@ jobs:
           cd dist/assets
           NEW_JS=$(ls index-*.js | head -1)
           # Old hashes from broken deploys — serve fixed code under old names
-          for OLD in BEdNaBXa D0JSevUK Bus79q79 DC01fIDd; do
+          for OLD in BEdNaBXa D0JSevUK Bus79q79 DC01fIDd CyqxX5bC; do
             OLD_FILE="index-${OLD}.js"
             if [ "$NEW_JS" != "$OLD_FILE" ] && [ ! -f "$OLD_FILE" ]; then
               cp "$NEW_JS" "$OLD_FILE"
